@@ -1,0 +1,105 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko" >
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>WebStandard-2week</title>
+    <meta name="keywords" content="검색 키워드 지정" />
+    <meta name="subject" content="문서 제목 정보" />
+    <meta name="description" content="웹 페이지 요약 정보" />
+    <meta name="author" content="제작자 정보" />
+    <meta name="robots" content="검색 로봇 제어" />
+    <meta name="copyright" content="저작권 정보" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        *{font-family: 'Noto Sans KR', sans-serif;}
+        body{
+            max-width: 80vw;
+            width: 100%;
+            margin: 0 auto;
+            color: #333;
+        }
+        header{margin: 50px 0;}
+        header span {
+            background-color: rgb(58, 161, 61);
+            color: #000; 
+            font-size: 70px; 
+            font-weight: bold;
+            line-height:1.8em;
+            padding: 0px 20px 0;
+        }
+        header div{margin: 30px 0;}
+        .tl2{ color: rgb(58, 161, 61);
+            display: inline;
+        }
+        .content{ padding-left: 20px; border-left: 1px solid black;}
+    </style>
+</head>
+<body>
+    <header>
+        <span> Web Standard Publishiing </span><br/>
+        <span>01. HTML - PHASE 1 </span>
+        <div>/ 21961086 이유정</div>
+        <hr/>
+    </header>
+    <h2 class="tl2">문단 관련 요소 - 제목</h2>
+    <div class="content">
+        <h1>&lt;h1&gt;대제목</h1>
+        <h2>&lt;h2&gt;중제목</h2>
+        <h3>&lt;h3&gt;소제목</h3>
+        <h4>&lt;h4&gt;소소제목</h4>
+        <h5>&lt;h5&gt;소소소제목</h5>
+        <h6>&lt;h6&gt;소소소소제목</h6>
+    </div>
+    <p>
+        대제목부터 소제목까지 h2, h2, h3 h4, h5, h6으로 구분할 수 있습니다.<br/>
+        잘 구성된 제목은 기기에서 정보 인식성에 효과적입니다.
+    </p>
+    <!-- 구분선 <hr/>태그는 종료태그가 없는 독립형 태그입니다.
+        수평선으로 표현되어 구분선 역할을 합니다. -->
+    <hr/>
+    <h2 class="tl2">문단 관련 요소 - 단락</h2>
+    <!-- p (블록형 태그)-->
+    <p style="background-color:rgb(58, 161, 61); color:#000; font-weight: bold; padding: 20px;"> 
+        p태그는 단락으로 정의할 때 사용합니다.
+        a, img, 등 인라인 요소와 텍스트만 포함하며
+        블록 요소는 사용할 수 없습니다.
+    </p>
+
+
+    <h2 class=tl2>문단 관련 요소 - 줄바꿈</h2>
+    <!-- 강제로 줄바꿈을 하는 독립형 <br/>태그 -->
+    <p>줄바꿈 &lt;br/&gt;태그는<br/> 단락에서 강제로 줄바꿈을 할 때 사용합니다.<br/>종료태그가 없는 독립형 태그입니다.</p>
+
+    <hr/>
+    <h2 class="tl2">img 태그</h2>
+    <p>&lt;img/&gt;태그를 사용하여 이미지를 넣을 수 있습니다. <br/>
+    src를 통해 경로를 입력해줍니다. width의 값으로 이미지의 가로사이즈를 지정하며 height의 값으로 세로사이즈를 지정합니다.<br/> alt란 이미지의 묘사 내용을 말합니다. title은 이미지의 제목을 말하며
+    이미지에 마우스를 올리면 title이 표시됩니다.</p>
+    <img style="display:block;"src="https://4.bp.blogspot.com/-uh5p8LZmpXo/WvlA8ZrkbYI/AAAAAAAACm0/pKylxRcAgB0vv9YA9CcpnonpznZZ_XXhwCLcBGAs/s1600/tumblr_ov5ug2sOit1rwpuwqo3_541.gif" alt="iron-man" title="iron-man">
+    <p>절대경로를 사용한 예입니다.</p>
+
+    <img style="border: 1px solid gray" src="./ironman.gif" alt="iron-man" title="iron-man">
+    <p>상대경로를 사용한 예입니다.<br/> 소스파일을 함께 첨부하지 않으면 사진이 표시되지 않습니다.</p>
+    <hr/>
+    <h2 class="tl2">a 태그</h2>
+    <p>
+        a태그의 href 으로 이동할 주소를 지정합니다. <br/>
+        target 속성은 _blank 값으로 새 창을 띄우도록 지정합니다.
+    </p>
+    <p style="background-color:rgb(58, 161, 61); color:#000; font-weight: bold; padding: 20px;">
+        &lt a href="http://www.kaywon.ac.kr/" target="_blank" alt="계원예술대학교 바로가기" title="타이틀 값입니다."&gt;계원예술대학교 바로가기&lt/a&gt;
+    </p>
+    <a href="http://www.kaywon.ac.kr/" target="_blank" alt="계원예술대학교 바로가기" title="타이틀 값입니다.">계원예술대학교 바로가기</a>
+
+    <hr/>
+    <div>
+        <h2 class="tl2">&lt;strong&gt;, &lt;em&gt;</h2>
+        <p>
+            <strong>&lt;strong&gt; 태그는 글씨를 굵게 출력하여 강조합니다.</strong><br/>
+            <em>&lt;em&gt;태그는 글씨를 기울임꼴로 출력하여 강조합니다.</em>
+        </p>
+    </div>
+</body>
+</html>

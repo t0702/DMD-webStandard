@@ -1,0 +1,483 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko" >
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>WebStandard-3week</title>
+    <meta name="keywords" content="검색 키워드 지정" />
+    <meta name="subject" content="문서 제목 정보" />
+    <meta name="description" content="웹 페이지 요약 정보" />
+    <meta name="author" content="제작자 정보" />
+    <meta name="robots" content="검색 로봇 제어" />
+    <meta name="copyright" content="저작권 정보" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        *{font-family: 'Noto Sans KR', sans-serif;}
+        body{
+            max-width: 80vw;
+            width: 100%;
+            margin: 0 auto;
+            color: #333;
+        }
+        header{margin: 50px 0;}
+        header span {
+            background-color: rgb(58, 161, 61);
+            color: #000; 
+            font-size: 70px; 
+            font-weight: bold;
+            line-height:1.8em;
+            padding: 0px 20px 0;
+        }
+        header div{margin: 30px 0;}
+        .tl2{ color: rgb(58, 161, 61);
+            display: inline;
+        }
+        .content{ padding-left: 20px; border-left: 1px solid black;}
+        .date{ font-size: 14px; color: #838383; margin: 30px 0;}
+        .text-element {padding: 0; color: #838383;}
+        .text-element li{list-style: none;}
+        .text-element li:before{content: ': '}
+    
+        .code{
+            background-color: rgb(58, 161, 61);
+            color: #000; 
+            padding: 20px ;
+            display: inline-block;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        dd{margin-left: 10px;}
+        .container dd:before{content: '- ';}
+        form dd:before{ content : '- ';}
+        form h4 { margin-bottom: 0;}
+
+        table{margin-bottom: 30px;}
+
+
+        /* 폼태그 응용 */
+        .form_wrap{ width: 325px;
+            margin: 0px auto;
+        }
+        .form_wrap h3{ font-size: 13px;}
+        input{ box-sizing: border-box; height: 35px;}
+        #male, #female{ height: auto;}
+        #id, #pw, #name, #certify_confirm{ width:100%; padding: 0px 10px;}
+        #birth_y, #birth_m, #birth_d{ width: 32%;}
+        #birth_m {
+            height: 35px;
+            border: solid 0.5px #cecece;
+            color: rgb(135, 135, 135);
+            background-color: white;
+        }
+        
+        #phone{ width: 70%; padding: 0px 10px;}
+        #certify {
+            width: 28%;
+            padding:5px;
+            color: white;
+            background-color:black;
+            border:none;
+            }
+        hr{ margin: 20px 0px;}
+
+        #join, #cancel{
+            background-color:black;
+            border:none;
+            color: white;
+            width: 100%;
+            height: 50px;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        #cancel {background: rgb(222, 222, 222);}
+        #gen{font-size: 14px;}
+    </style>
+</head>
+<body>
+    <header>
+        <span> Web Standard Publishiing </span><br/>
+        <span> HTML - PHASE 2 </span>
+        <div>/ 21961086 이유정</div>
+        <hr/>
+    </header>
+    <div class=date>2week-0410</div>
+    <h2 class="tl2">문단 관련 요소 - 제목</h2>
+    <div class="content">
+        <h1>&lt;h1&gt;대제목</h1>
+        <h2>&lt;h2&gt;중제목</h2>
+        <h3>&lt;h3&gt;소제목</h3>
+        <h4>&lt;h4&gt;소소제목</h4>
+        <h5>&lt;h5&gt;소소소제목</h5>
+        <h6>&lt;h6&gt;소소소소제목</h6>
+    </div>
+    <p>
+        대제목부터 소제목까지 h2, h2, h3 h4, h5, h6으로 구분할 수 있습니다.<br/>
+        잘 구성된 제목은 기기에서 정보 인식성에 효과적입니다.
+    </p>
+    <!-- 구분선 <hr/>태그는 종료태그가 없는 독립형 태그입니다.
+        수평선으로 표현되어 구분선 역할을 합니다. -->
+    <hr/>
+    <h2 class="tl2">문단 관련 요소 - 단락</h2>
+    <!-- p (블록형 태그)-->
+    <p style="background-color:rgb(58, 161, 61); color:#000; font-weight: bold; padding: 20px;"> 
+        p태그는 단락으로 정의할 때 사용합니다.
+        a, img, 등 인라인 요소와 텍스트만 포함하며
+        블록 요소는 사용할 수 없습니다.
+    </p>
+
+
+    <h2 class=tl2>문단 관련 요소 - 줄바꿈</h2>
+    <!-- 강제로 줄바꿈을 하는 독립형 <br/>태그 -->
+    <p>줄바꿈 &lt;br/&gt;태그는<br/> 단락에서 강제로 줄바꿈을 할 때 사용합니다.<br/>종료태그가 없는 독립형 태그입니다.</p>
+
+    <hr/>
+    <h2 class="tl2">img 태그</h2>
+    <p>&lt;img/&gt;태그를 사용하여 이미지를 넣을 수 있습니다. <br/>
+    src를 통해 경로를 입력해줍니다. width의 값으로 이미지의 가로사이즈를 지정하며 height의 값으로 세로사이즈를 지정합니다.<br/> alt란 이미지의 묘사 내용을 말합니다. title은 이미지의 제목을 말하며
+    이미지에 마우스를 올리면 title이 표시됩니다.</p>
+    <img style="display:block;"src="https://4.bp.blogspot.com/-uh5p8LZmpXo/WvlA8ZrkbYI/AAAAAAAACm0/pKylxRcAgB0vv9YA9CcpnonpznZZ_XXhwCLcBGAs/s1600/tumblr_ov5ug2sOit1rwpuwqo3_541.gif" alt="iron-man" title="iron-man">
+    <p>절대경로를 사용한 예입니다.</p>
+
+    <img style="border: 1px solid gray" src="./ironman.gif" alt="iron-man" title="iron-man">
+    <p>상대경로를 사용한 예입니다.<br/> 소스파일을 함께 첨부하지 않으면 사진이 표시되지 않습니다.</p>
+    <hr/>
+    <h2 class="tl2">a 태그</h2>
+    <p>
+        a태그의 href 으로 이동할 주소를 지정합니다. <br/>
+        target 속성은 _blank 값으로 새 창을 띄우도록 지정합니다.
+    </p>
+    <p style="background-color:rgb(58, 161, 61); color:#000; font-weight: bold; padding: 20px;">
+        &lt a href="http://www.kaywon.ac.kr/" target="_blank" alt="계원예술대학교 바로가기" title="타이틀 값입니다."&gt;계원예술대학교 바로가기&lt/a&gt;
+    </p>
+    <a href="http://www.kaywon.ac.kr/" target="_blank" alt="계원예술대학교 바로가기" title="타이틀 값입니다.">계원예술대학교 바로가기</a>
+
+    <hr/>
+    <div>
+        <h2 class="tl2">&lt;strong&gt;, &lt;em&gt;</h2>
+        <p>
+            <strong>&lt;strong&gt; 태그는 글씨를 굵게 출력하여 강조합니다.</strong><br/>
+            <em>&lt;em&gt;태그는 글씨를 기울임꼴로 출력하여 강조합니다.</em>
+        </p>
+    </div>
+
+    <hr/>
+    <div class="date">3week - 0417</div>
+    <h2 class="tl2">목록 관련 요소</h2>
+    <p style="color:#888888"> : 웹 문서의 다양한 콘텐츠를 마크업하기에 적당한 element <br>
+        - 비순서형, 순서형, 정의형목록
+    </p>
+
+    <h2 class="tl2">텍스트 관련 요소</h2>
+    <ul class="text-element tl2">
+        <li>강조 strong, em</li>
+        <li>추가 글 및 삭제글 ins, del</li>
+        <li>첨자 sup, sub</li>
+    </ul>
+    <dl>
+        <dt>커리(Curry) 만들기</dt>
+        <dd>
+            <dl>
+                <dt>재료</dt>
+                <dd>
+                    <ul>
+                        <li>카레 가루 100g</li>
+                        <li>닭가슴살 200g</li>
+                        <li>감자 1개</li>
+                        <li>양파 1/2개</li>
+                        <li>당근 1/2개</li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dt>만드는 법</dt>
+                <dd>
+                    <ol>
+                        <li>카레 가루 <em>8큰술</em>에 물 <em>6큰술</em>을 넣어 풀어놓는다.</li>
+                        <li>닭가슴살, 감자, 양파, 당근을 따로 중불에 살짝</li>
+                        <li>볶아 놓은 재료를 카레를 풀어놓은 물과 함께 냄비에 넣고 물 <em>컵</em>을 부은 후 15분정도 끓인다.</li>
+                    </ol>
+                </dd>
+            </dl>
+        </dd>
+    </dl>
+
+    <h3>커리(Curry) 만들기</h3>
+    <h4>재료</h4>
+    <ul>
+        <li>카레 가루 <em>100g</em></li>
+        <li>닭가슴살 <em>200g</em></li>
+        <li>감자 <strong><em>1개</em></strong></li>
+        <li>양파 <em>1/2개</em></li>
+        <li>당근 <em>1/2개</em></li>
+    </ul>
+    <h3>만드는 법</h3>
+    <ol>
+        <li>카레 가루 <del>8큰술</del> <ins>>7.5큰술</ins에 물 6큰술을 넣어 풀어놓는다.</li>
+        <li>닭가슴살, 감자, 양파, 당근을 따로 중불에 살짝</li>
+        <li>볶아 놓은 재료를 카레를 풀어놓은 물(H<sub>2</sub>O)과 함께 냄비에 넣고 물 2컵을 부은 후 <strong><em>15분</em></strong>정도 끓인다.</li>
+    </ol>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hyper Text Markup Language</dd>
+    </dl>
+
+    <hr>
+
+    <div class="container">
+        <h2 class="tl2">테이블 관련요소</h2>
+        <h4>1. 테이블 요소 - table, tr, th, td</h4>
+        <ul>
+            <li>
+                <dt>선언 &lt;table&gt;</dt>
+            </li>
+            <li>
+                <dt>행 &lt;tr&gt;</dt>
+                <dd>제목 셀 &lt;th&gt;</dd>
+                <dd>내용 셀 &lt;td&gt;</dd>
+            </li>
+        </ul>
+        <h4>2. 셀 병합 - rowspan, colspan</h4>
+        <ul>
+            <li>
+                <dt>가로로 합치기 colspan</dt>
+            </li>
+            <li>
+                <dt>세로로 합치기 rowspan</dt>
+            </li>
+        </ul>
+        <h4>3. 제목 및 요약문 - caption, summary</h4>
+        <ul>
+            <li>
+                <dt>Summary</dt>
+                <dd>간단한 제목보다 테이블의 내용을 설명</dd>
+                <dd>시각적으로 테이블 접근이 쉽지 않은 사용자를 위한 배려</dd>
+            </li>
+            <li>
+                <dt>Caption</dt>
+                <dd>테이블의 내용을 대표할 수 있는 제목을 작성</dd>
+            </li>
+        </ul>
+        <h4>4. 행 그룹화 요소– thead, tfoot, tbody</h4>
+        <ul>
+            <li>
+                <td>선언순서 : thead, tfoot, tbody</td>
+            </li>
+            <li>
+                <td>thead</td>
+                <dd>테이블의 헤더 영역. 반드시 th요소를 사용하여 제목 셀이라는 것을 명시</dd>
+            </li>
+            <li>
+                <td>tfoot</td>
+                <dd>위치에 관계 없이 테이블의 가장 마지막 행에 출력</dd>
+            </li>
+            <li>
+                <td>tbody</td>
+                <dd>논리적 구분을 위해 여러번 등장할 수도 있다</dd>
+            </li>
+        </ul>
+        <h4>5. 제목 셀과 내용 셀의 연관성– scope</h4>
+        <ul>
+            <li>
+                <td>scope</td>
+                <dd><strong>scope=“row”</strong>행의 제목</dd>
+                <dd><strong>scope="col"</strong>열의 제목</dd>
+
+            </li>
+        </ul>
+
+        <h4>출석부</h4>
+        <table border="1" summary="디지털미디어디자인학과 학번, 이름, 전화번호">
+            <caption>디지털미디어디자인학과 출석부</caption>
+            <thead>
+                <tr>
+                    <th>학과</th>
+                    <th>학번</th>
+                    <th>이름</th>
+                    <th>전화번호</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th colspan="3" scope="col">총 학생 수</th>
+                    <td>3명</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td rowspan="3">디지털미디어디자인</td>
+                    <td>21961086</td>
+                    <td>이유정</td>
+                    <td>010-xxxx-xxxx</td>
+                </tr>
+                <tr>
+                    <td>12341234</td>
+                    <td>정유이</td>
+                    <td>010-xxxx-xxxx</td>
+                </tr>
+                <tr>
+                    <td>43214321</td>
+                    <td>유이정</td>
+                    <td>010-xxxx-xxxx</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <hr/>
+    
+    <h2 class="tl2">폼 관련 요소</h2>
+    <form action="" method="post">
+        <div>
+            <h4>1. 폼의 정의와 요소:</h4>
+            <ul>
+                <li>
+                    <dt>웹 문서가 서로 상호작용을 할 수 있도록 하는 역할</dt>
+                    <dd> 입력 상자, 라디오 버튼, 체크 박스, 목록상자(combo box), 전송버튼</dd>
+                </li>
+                <li>
+                    <dt>폼 요소<</dt>
+                    <dd><strong>action = "URL" </strong>: 폼의 내용을 처리하기 위한 서버의 URL</dd>
+                    <dd><strong>method="get" </strong>: 웹 브라우저의주소 창에 변수 값이 노출. 짧을 경우. 빠름</dd>
+                    <dd><strong>method="post" </strong>: 긴 경우. 보안 문제 때문에 데이터값을 노출시킬 수 없을 때</dd>
+                </li>
+            </ul>
+            <h4>2. 그룹화, 제목</h4>
+            <ul>
+                <li>
+                    <dt>그룹화, 제목</dt>
+                    <dd><strong>fieldset</strong> : 여러 개의 폼 요소를 그룹화 하여 좀 더 구조적으로 표현 가능.</dd>
+                    <dd><strong>legend</strong> : 어떠한 성격의 콘텐츠인지 제목 형식으로 알려줌. 한 번만 작성 가능.</dd>
+                </li>
+            </ul>
+            <h4>3. 레이블</h4>
+            <ul>
+                <li>
+                    <dt>각 폼 컨트롤의 연관 관계와 설명을 추가하는 역할</dt>
+                    <dd>입력 폼과 1:1로 대응</dd>
+                    <dd>사용하기 어려울 경우 input에 title 속성으로 대체 가능</dd>
+                </li>
+                <li>명시적 레이블(권장)</li>
+                <li>암묵적 레이블</li>
+            </ul>
+            <h4>4. input</h4>
+            <ul>
+                <li>
+                    <dt>Type</dt>
+                    <dd><strong>text</strong> : 한 줄 글 상자</dd>
+                    <dd><strong>password</strong> : 비밀번호 입력. *나 ●로 표시</dd>
+                    <dd><strong>radio</strong> : 여러 개의 라디오 버튼 중 하나만 선택 가능 (같은 name명 끼리 묶음)</dd>
+                    <dd><strong>checkbox</strong> : 다중 선택이 가능한 체크 박스</dd>
+                    <dd><strong>file</strong> : 파일을 첨부 형태로 서버로 보낼 때 사용하는 컨트롤</dd>
+                </li>
+            </ul>
+            <h4>5. select, option, optgroup</h4>
+            <ul>
+                <li>
+                    <dt>select</dt>
+                    <dd><strong>size</strong> : 기본1. 출력에 확보할 줄 개수 지정</dd>
+                </li>
+            </ul>
+            <h4>6. textarea</h4>
+            <ul>
+                <li>
+                    <dt>textarea</dt>
+                    <dd><strong>cols</strong> : 가로 글자 수</dd>
+                    <dd><strong>rows</strong> : 줄 개수</dd>
+                </li>
+            </ul>
+            <h4>7. button</h4>
+            <ul>
+                <li>
+                    <dt>type</dt>
+                    <dd><strong>button</strong> : 일반</dd>
+                    <dd><strong>submit</strong> : 전송</dd>
+                    <dd><strong>reset</strong> : 취소</dd>
+                </li>
+            </ul>
+
+        </div>
+        <h3></h3>
+        
+        <fieldset> <!-- 그룹화 -->
+            <legend>실습용 폼</legend>
+            <label for="userid">아이디</label>
+            <input type="text" name="id" id="userid" placeholder="아이디를 입력해주세요."> <br>
+
+            <label for="userpw">패스워드</label>
+            <input type="password" name="pw" id="userpw" placeholder="패스워드를 입력해주세요."> <br>
+            
+            <hr/>
+
+            <input type="radio" name="grade" value="독서" id="grade1" checked="checked"> 
+            <label for="grade1">독서</label>
+            <br>
+            <input type="radio" name="grade" value="운동" id="grade2">
+            <label for="grade2">운동</label> <br>
+
+            <input type="checkbox" name="chk" checked="checked">
+            <input type="checkbox" name="chk"> <br>
+
+            <input type="file">
+
+            <hr/>
+            <textarea rows="5" cols="100" name="text" placeholder="내용을 입력하세요."></textarea>
+            <button>전송</button> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>실습 응용</legend>
+            <div class="form_wrap">
+
+                <h3><label for="id">아이디</label></h3>
+                <input type="text"id="id" name="id" placeholder="아이디를 입력하세요."> <br/>
+                <h3><label for="pw">비밀번호</label></h3>
+                <input type="password" id="pw" name="pw" placeholder="비밀번호를 입력하세요"><br/>
+
+
+                <h3><label for="gender">성별</label></h3>
+                <input type="radio" name="gender" id="female">
+                <label for="female" id="gen">여성</label>
+                <input type="radio" name="gender" id="male">
+                <label for="male" id="gen">남성</label>
+                
+                <h3><label for="name">이름</label></h3>
+                <input id="name" type="text" name="name" >
+                
+                <h3><label for="birth">생년월일</label></h3>
+                <input id="birth_y" type="text" name="birth" placeholder="년(4자)" >
+                <select id="birth_m" name="birth" >
+                    <option value>월</option>
+                    <option value="1">1월</option>
+                    <option value="2">2월</option>
+                    <option value="3">3월</option>
+                    <option value="4">4월</option>
+                    <option value="5">5월</option>
+                    <option value="6">6월</option>
+                    <option value="7">7월</option>
+                    <option value="8">8월</option>
+                    <option value="9">9월</option>
+                    <option value="10">10월</option>
+                    <option value="11">11월</option>
+                    <option value="12">12월</option>
+                </select>
+                <input id="birth_d" type="text" name="birth" placeholder="일" >
+                
+                <br/>
+
+                <h3><label for="phone">휴대전화</label></h3>
+                <input id="phone" type="text" name="phone" placeholder="전화번호 입력" >
+                <input type="button" id="certify" name="phone" value="인증번호 받기" ><br/>
+                <h3><label for="certify_confirm">인증번호 확인</label></h3>
+                <input id="certify_confirm" type="text" name="certify_confirm" placeholder="인증번호를 입력하세요." >
+                
+                <hr/>
+                <button type="submit" value="가입하기" id="join">가입하기</button>
+                <button type="reset" value="취소하기" id="cancel">취소하기</button>
+            </div>
+        </fieldset>
+
+    </form>
+</body>
+</html>

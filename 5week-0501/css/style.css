@@ -1,6 +1,9 @@
 /* Common Style */
 * {font-family: 'Noto Sans KR', sans-serif; box-sizing: border-box;}
-body { margin: 0; padding: 0; width: 80vw; margin: 0 auto;}
+body { margin: 0; padding: 0; width: 80vw; margin: 0 auto; background: rgb(231, 234, 237); padding-bottom: 50px;}
+.container{background: #fff; border: 1px solid #999; padding: 20px;}
+header > h1{ margin: 0 0 30px;}
+#big-title{ color: gray; font-size: 14px; text-align: center;}
 li{line-height: 1.7em;}
 .title{ color: rgb(58, 85, 173);}
 .date{ 
@@ -10,6 +13,7 @@ li{line-height: 1.7em;}
     text-align: center; 
     height: 30px;
 }
+
 
 /* 2 - 3 week */        
 header h1{ color: rgb(58, 85, 173); font-size: 50px; }

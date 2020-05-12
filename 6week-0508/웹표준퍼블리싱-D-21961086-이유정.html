@@ -4,24 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" type="text/css" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" type="text/css" rel="stylesheet"> 
     <!-- <link rel="stylesheet" href="css/style.css" type="text/css"> -->
-    <title>4week - 0424</title>
+    <title>Web Standard Publishing</title>
     <style>
         @import url(css/style.css);
     </style>
 </head>
 <body>
     <p id="big-title">DIGITAL MEDIA DESIGN - 21961086 이유정</p>
-    <div class="wrap">
+    <div class="container">
         <header>
             <h1>Web Standard Publishing</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#n2">2</a></li>
+                    <li><a href="#n3">3</a></li>
+                    <li><a href="#n4">4</a></li>
+                    <li><a href="#n5">5</a></li>
+                    <li><a href="#n6">6</a></li>
+                </ul>
+            </nav>
         </header>
 
         <hr>
         <!-- 2week 0410  -->
-        <p class="date">2week - 0410</p>
-        <div class="sec-week container">
+        <p class="date" id="n2">2week - 0410</p>
+        <div class="sec-week">
             <h2 class="title">문단 관련 요소 - 제목</h2>
             <div>
                 <h1>&lt;h1&gt;대제목&lt;/h1&gt;</h1>
@@ -112,8 +121,8 @@
         <hr>
         
         <!-- 3week 0417  -->
-        <p class="date">3week - 0417</p>
-        <div class="thir-week container">
+        <p class="date" id="n3">3week - 0417</p>
+        <div class="thir-week">
             <h2 class="title">목록 관련 요소</h2>
             <p style="color:#888888"> : 웹 문서의 다양한 콘텐츠를 마크업하기에 적당한 element <br>
                 - 비순서형, 순서형, 정의형목록
@@ -174,89 +183,88 @@
             </dl>
             <hr>
 
-            <div class="container">
-                <h2 class="title">테이블 관련요소</h2>
-                <h4>1. 테이블 요소 - table, tr, th, td</h4>
-                <ul>
-                    <li>선언 &lt;table&gt;</li>
-                    <li>
-                        <p> 행 &lt;tr&gt;<br>
-                            - 제목 셀 &lt;th&gt;<br/>
-                            - 내용 셀 &lt;td&gt;
-                        </p>
-                    </li>
-                        
-                </ul>
-                <h4>2. 셀 병합 - rowspan, colspan</h4>
-                <ul>
-                    <li>가로로 합치기 colspan</li>
-                    <li>세로로 합치기 rowspan</li>
-                </ul>
-                <h4>3. 제목 및 요약문 - caption, summary</h4>
-                <ul>
-                    <li>
-                        <strong>Summary</strong><br>
-                        - 간단한 제목보다 테이블의 내용을 설명<br>
-                        - 시각적으로 테이블 접근이 쉽지 않은 사용자를 위한 배려
-                    </li>
-                    <li>
-                        <strong>Caption</strong><br>- 테이블의 내용을 대표할 수 있는 제목을 작성
-                    </li>
-                </ul>
-                <h4>4. 행 그룹화 요소– thead, tfoot, tbody</h4>
-                <ul>
-                    <li>선언순서 : thead, tfoot, tbody</li>
-                    <li>thead: 테이블의 헤더 영역. 반드시 th요소를 사용하여 제목 셀이라는 것을 명시</li>
-                    <li>tfoot: 위치에 관계 없이 테이블의 가장 마지막 행에 출력</li>
-                    <li>tbody: 논리적 구분을 위해 여러번 등장할 수도 있다</li>
-                </ul>
-                <h4>5. 제목 셀과 내용 셀의 연관성– scope</h4>
-                <ul>
-                    <li>
-                        scope<br>
-                        - scope=“row” : 행의 제목<br/>
-                        - scope="col" : 열의 제목
-                    </li>
-                </ul>
-        
-                <h4>출석부</h4>
-                <table>
-                    <caption>디지털미디어디자인학과 출석부</caption>
-                    <thead>
-                        <tr>
-                            <th>학과</th>
-                            <th>학번</th>
-                            <th>이름</th>
-                            <th>전화번호</th>
-                        </tr>
-                    </thead>
+
+            <h2 class="title">테이블 관련요소</h2>
+            <h4>1. 테이블 요소 - table, tr, th, td</h4>
+            <ul>
+                <li>선언 &lt;table&gt;</li>
+                <li>
+                    <p> 행 &lt;tr&gt;<br>
+                        - 제목 셀 &lt;th&gt;<br/>
+                        - 내용 셀 &lt;td&gt;
+                    </p>
+                </li>
                     
-                    <tbody>
-                        <tr>
-                            <td rowspan="3">디지털미디어디자인</td>
-                            <td>21961086</td>
-                            <td>이유정</td>
-                            <td>010-xxxx-xxxx</td>
-                        </tr>
-                        <tr>
-                            <td>12341234</td>
-                            <td>정유이</td>
-                            <td>010-xxxx-xxxx</td>
-                        </tr>
-                        <tr>
-                            <td>43214321</td>
-                            <td>유이정</td>
-                            <td>010-xxxx-xxxx</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <th colspan="3" scope="col">총 학생 수</th>
-                            <td>3명</td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
+            </ul>
+            <h4>2. 셀 병합 - rowspan, colspan</h4>
+            <ul>
+                <li>가로로 합치기 colspan</li>
+                <li>세로로 합치기 rowspan</li>
+            </ul>
+            <h4>3. 제목 및 요약문 - caption, summary</h4>
+            <ul>
+                <li>
+                    <strong>Summary</strong><br>
+                    - 간단한 제목보다 테이블의 내용을 설명<br>
+                    - 시각적으로 테이블 접근이 쉽지 않은 사용자를 위한 배려
+                </li>
+                <li>
+                    <strong>Caption</strong><br>- 테이블의 내용을 대표할 수 있는 제목을 작성
+                </li>
+            </ul>
+            <h4>4. 행 그룹화 요소– thead, tfoot, tbody</h4>
+            <ul>
+                <li>선언순서 : thead, tfoot, tbody</li>
+                <li>thead: 테이블의 헤더 영역. 반드시 th요소를 사용하여 제목 셀이라는 것을 명시</li>
+                <li>tfoot: 위치에 관계 없이 테이블의 가장 마지막 행에 출력</li>
+                <li>tbody: 논리적 구분을 위해 여러번 등장할 수도 있다</li>
+            </ul>
+            <h4>5. 제목 셀과 내용 셀의 연관성– scope</h4>
+            <ul>
+                <li>
+                    scope<br>
+                    - scope=“row” : 행의 제목<br/>
+                    - scope="col" : 열의 제목
+                </li>
+            </ul>
+    
+            <h4>출석부</h4>
+            <table>
+                <caption>디지털미디어디자인학과 출석부</caption>
+                <thead>
+                    <tr>
+                        <th>학과</th>
+                        <th>학번</th>
+                        <th>이름</th>
+                        <th>전화번호</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan="3">디지털미디어디자인</td>
+                        <td>21961086</td>
+                        <td>이유정</td>
+                        <td>010-xxxx-xxxx</td>
+                    </tr>
+                    <tr>
+                        <td>12341234</td>
+                        <td>정유이</td>
+                        <td>010-xxxx-xxxx</td>
+                    </tr>
+                    <tr>
+                        <td>43214321</td>
+                        <td>유이정</td>
+                        <td>010-xxxx-xxxx</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="3" scope="col">총 학생 수</th>
+                        <td>3명</td>
+                    </tr>
+                </tfoot>
+            </table>
             <hr>
 
             <h2 class="title">폼 관련 요소</h2>
@@ -478,8 +486,8 @@
         <hr>
         
          <!-- 4week 0424 -->
-        <p class="date">4week - 0424</p>
-        <div class="four-week container">
+        <p class="date" id="n4">4week - 0424</p>
+        <div class="four-week">
             <h2 class="title">HTML5 요소</h2>
             <section>
                 <h4>&lt;section&gt; 요소</h4>
@@ -586,8 +594,8 @@
         <hr>
 
         <!-- 5week 0501 -->
-        <p class="date">5week - 0501</p>
-        <div class="five-week container">
+        <p class="date" id="n5">5week - 0501</p>
+        <div class="five-week">
             <h2 class="title">전체 선택자</h2>
             <ul>
                 <li>모든 요소를 선택하는 방법으로 “*”를 선택자로 선언한다</li>
@@ -731,12 +739,200 @@
             </div>
         </div>
 
-        <br><hr>
+        <!-- 6week 0508 -->
+        <p class="date" id="n6">6week - 0508</p>
+        <div class="six-week">
+            <h2 class="title">박스 모델</h2>
+            <ul>
+                <li>width / height <br>
+                    - 박스의 크기를 지정 / 블록 요소, 블록 요소의 성격을 가지는 요소<br>
+                    - width : 길이 | 퍼센트 | auto | inherit <br>
+                    - height : 길이 | 퍼센트 | auto | inherit
+                </li>
+            </ul>
+            <div class="example">
+                <div class="wh"> width: 300px / height: 100px</div>
+            </div>
 
-        <p class="date">6week - 0508</p>
-        <div class="six-week container">
+            <ul>
+                <li>border<br>
+                    – 테두리를지정/선모양,굵기,색상/위,아래,오른쪽,왼쪽<br>
+                    – border, border-style, border-width, border-color<br>
+                    – Border(-left, -right, -top, -bottom):굵기, 모양, 색상<br>
+                    – 모양 : none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset
+                </li>
+            </ul>
+            <div class="example">
+                <div class="box"> solid</div>
+                <div class="box"> dotted</div>
+                <div class="box"> dashed</div>
+            </div>
+
+            <ul>
+                <li>margin <br>
+                    Border를 기준으로 바깥쪽 여백<br>
+                    – margin(-top, -right, -bottom, -left) : 길이 | 퍼센트 | auto | inherit<br>
+                    – margin:10px : 네 곳에 같은 값 적용<br>
+                    – margin:5px 10px : 위/아래, 좌/우 적용<br>
+                    – margin:5px 10px 15px : 위, 좌/우, 아래 적용<br>
+                    – margin:5px 10px 15px 20px : 위, 우, 아래, 좌 적용
+                </li>
+            </ul>
+            <div class="example">
+                <div class="margin-box"> margin : 0</div> <hr>
+                <div class="margin-box"> margin : 40px</div>
+            </div>
+            <ul>
+                <li>padding
+                    – Border를 기준으로 안쪽 여백<br>
+                    – padding(-top, -right, -bottom, -left) : 길이 | 퍼센트 | auto | inherit<br>
+                    – padding:10px : 네 곳에 같은 값 적용<br>
+                    – padding:5px 10px : 위/아래, 좌/우 적용<br>
+                    – padding:5px 10px 15px : 위, 좌/우, 아래 적용<br>
+                    – padding:5px 10px 15px 20px : 위, 우, 아래, 좌 적용
+                </li>
+            </ul>
+            <div class="example">
+                <div class="padding-box"> padding : 0</div>
+                <hr>
+                <div class="padding-box"> padding : 40px</div>
+            </div>
+
+            <br><hr>
+
+            <h2 class="title">플로트(float) & Clear</h2>
+            <ul>
+                <li>float<br>
+                    – 박스의 위치를 부모 요소의 안에서 왼쪽, 오른쪽으로 이동 <br>
+                    – 문서의 일반적인 흐름에 영향을 받지 않으면서 이동된 위치에 뜸 <br>
+                    – 주변 박스는 위치가 변경되어 플로트된 요소와 나란히 배치 <br>
+                    – float : left | right | none | inherit
+                </li>
+                <li>clear<br>
+                    – Float의 해제<br>
+                    – float 다음에 오는 문단에 clear 속성을 지정<br>
+                    – clear : left | right | both | none | inherit
+                </li>
+            </ul>
+            <div class="example">
+                <h4>float:left</h4>
+                <div class="float-left">
+                    <div class="left"></div>
+                    <div class="left"></div>
+                    <div class="left"></div>
+                    <div class="left"></div>
+                    <div class="clear"></div>
+                </div>
+                <hr>
+                <h4>float:right</h4>
+                <div class="float-right">
+                    <div class="right"></div>
+                    <div class="right"></div>
+                    <div class="right"></div>
+                    <div class="right"></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
             
-        </div>        
+            <br><hr>
+            
+            <h2 class="title" id="fixed">포지션(position)</h2>
+            <ul>
+                <li>position <br>
+                    – 박스에 대한 배치를 변경 / 기본 static <br>
+                    – relative : 자기 자신의 위치를 기준으로 상대적으로 움직임 <br>
+                    – absolute : 자신이 포함된 컨테이닝 블록을 기준으로 배치 <br>
+                    – fixed : 스크린을 기준으로 박스를 배치 <br>
+                    – position : static | relative | absolute | fixed | inherit <br>
+                    – top, right, bottom, left : 길이 | 퍼센트 | auto | inherit
+                </li>
+            </ul>
+            <div class="example position">
+                <div class="rel">relative </div>
+                <div class="abso">absolute </div>
+                <a href="#fixed" class="fix">fixed <br> 이동</a>
+            </div>
+
+            <br><hr>
+
+            <h2 class="title">타이포그래피</h2>
+            <ul>
+                <li>font-family <br>
+                    – 글꼴을 지정할 때<br>
+                    – 하나 이상(“,”로 구분)의 글꼴을 선언<br>
+                    – 마지막에 대표 패밀리(serif, sans-serif, cursive, fantasy, monospace)를 명시<br>
+                    – font-family : 글꼴 패밀리명, 대표 패밀리명
+                </li>
+                <li>font-size<br>
+                    – 글자크기를지정할때<br>
+                    – 절대크기 : small, medium, large, pt, pc, cm, mm – 상대크기:px,em,ex,%<br>
+                    – font-size : 키워드 | 길이 | 퍼센트 | inherit
+                </li>
+            </ul>
+            <div class="example" id="font-size">
+                <h4>Noto Sans KR</h4>
+                <hr>
+                <p style="font-size: 10px;">Typography 10px</p>
+                <p style="font-size: 20px;">Typography 20px</p>
+                <p style="font-size: 30px;">Typography 30px</p>
+                <hr>
+                <p style="font-size: 1em;">Typography 1em</p>
+                <p style="font-size: 2em;">Typography 2em</p>
+                <p style="font-size: 3em;">Typography 3em</p>
+                <hr>
+                <p style="font-size: small;">Typography small</p>
+                <p style="font-size: medium;">Typography medium</p>
+                <p style="font-size: large;">Typography large</p>
+            </div>
+            <ul>
+                <li>font-weight<br>
+                    – 글꼴을굵게장식할때<br>
+                    – normal, bold, bolder, lighter<br>
+                    – 100~900 (normal:400, bold:700)<br>
+                    – font-weight : 키워드 | 100~900 | inherit
+                </li>
+            </ul>
+            <div class="example" id="font-weight">
+                <h4>Noto Sans KR</h4>
+                <hr>
+                <p style="font-weight: lighter;">Typography lighter</p>
+                <p style="font-weight: 10px;">Typography normal</p>
+                <p style="font-weight: bold;">Typography bold</p>
+                <p style="font-weight: bolder;">Typography bolder</p>
+                <hr>
+                <p style="font-weight: 100;">Typography 100</p>
+                <p style="font-weight: 300;">Typography 300</p>
+                <p style="font-weight: 400;">Typography 400</p>
+                <p style="font-weight: 500;">Typography 500</p>
+                <p style="font-weight: 700;">Typography 700</p>
+                <p style="font-weight: 900;">Typography 900</p>
+            </div>
+            <ul>
+                <li>font-style <br>
+                    – 글꼴의 스타일을 지정할 때<br>
+                    – normal, italic, oblique<br>
+                    – font-style : normal | italic | oblique
+                </li>
+            </ul>
+            <div class="example" id="font-style">
+                <p>Typography normal</p>
+                <p style="font-style: italic;">Typography italic</p>
+                <p style="font-style: oblique;">Typography oblique</p>
+            </div>
+            <ul>
+                <li>font-variant<br>
+                    – 영문 글꼴의 소문자를 대문자로 변경할 때<br>
+                    – normal, small-caps<br>
+                    – small-caps : 크기가 작은 대문자로 출력
+                </li>
+            </ul>
+            <div class="example" id="font-var">
+                <p style="font-variant: normal">I AM REGULAR UPPERCASE</p>
+                <p style="font-variant: small-caps">I am Small Caps</p>
+            </div>
+        </div>
+
+        
     </div>
 </body>
 </html>

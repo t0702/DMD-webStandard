@@ -1,0 +1,127 @@
+/* Common Style */
+* {font-family: 'Noto Sans KR', sans-serif; box-sizing: border-box;}
+body { margin: 0; padding: 0; width: 80vw; margin: 0 auto; background: rgb(231, 234, 237); padding-bottom: 50px;}
+.container{background: #fff; border: 1px solid #999; padding: 20px; position: relative;}
+header > h1{ margin: 0 0 30px;}
+#big-title{ color: gray; font-size: 14px; text-align: center;}
+li{line-height: 1.7em;}
+.title{ color: rgb(58, 85, 173);}
+.date{ 
+    font-size: 20px; font-weight: bold; 
+    background: rgb(231, 234, 237); 
+    color: rgb(58, 85, 173); 
+    text-align: center; 
+    height: 30px;
+}
+.example  {border: 1px solid gray; padding: 20px;}
+
+/* nav */
+.nav{position: fixed; top:50%; right: 20px; transform: translateY(-50%);}
+.nav ul{padding: 0;}
+.nav ul li{ 
+    width: 30px; height: 30px; 
+    background: #fff;
+    list-style: none; text-align: center;
+    border-radius: 100%; margin: 5px;
+    opacity: 50%;
+}
+.nav a:link,
+.nav a:active,
+.nav a:focus,
+.nav a:visited{ color: rgb(58, 85, 173); text-decoration: none;}
+.nav li:hover a{color: rgb(58, 85, 173); opacity: 100%;}
+.nav ul li:hover {background: white; opacity: 100%;}
+
+
+/* 2 - 3 week */        
+header h1{ color: rgb(58, 85, 173); font-size: 50px; }
+header p{ font-weight: bold; }
+.group li, .sec-week li{ list-style-type: circle; }
+table, th, td{border: 1px solid #333333;}
+
+/* 3week 폼태그 응용 */
+.form_wrap{ width: 325px; margin: 0px auto;}
+.form_wrap h3{ font-size: 13px;}
+input{ box-sizing: border-box; height: 35px;}
+#male, #female{ height: auto;}
+#id, #pw, #name, #certify_confirm{ width:100%; padding: 0px 10px;}
+#birth_y, #birth_m, #birth_d{ width: 32%;}
+#birth_m { height: 35px; border: solid 0.5px #cecece; color: rgb(135, 135, 135); background-color: white;}
+#phone{ width: 70%; padding: 0px 10px;}
+#certify { width: 28%; padding:5px; color: white; background-color:black; border:none;}
+#join, #cancel{ width: 100%; height: 50px; background-color:black; margin-bottom: 10px; 
+    color: white; font-size: 20px; font-weight: bold; border:none;}
+#cancel{ background: rgb(222, 222, 222);}
+.gen{ font-size: 14px;}
+
+/* 4week */
+.size{ font-weight: bold;}
+.price{ color: rgb(226, 53, 53);}
+.cafe-latte li{list-style:none;}
+section{border:1px solid gray; padding: 0 20px; margin: 20px 0;}
+article, aside {border: 1px solid gray; padding: 20px;}
+footer{ font-size: 12px; color: darkslateblue;}
+footer p{ margin: 0;}
+
+/* 5week */
+.five-week .em{font-weight: bold; color: rgb(90, 48, 230);}
+
+.five-week #ex_fir p:first-line{color: rgb(46, 167, 125);}
+.five-week #ex_fir div:first-letter{color: rgb(46, 167, 125);}
+.five-week .before:before { content:'시작 '; color: rgb(90, 48, 230);}
+.five-week .after:after { content:' 끝'; color: rgb(90, 48, 230);}
+
+.five-week a{ text-decoration: none;}
+.five-week a:link{ color: rgb(90, 48, 230);}
+.five-week a:visited{ color: rgb(38, 184, 128);}
+.five-week a:hover{ color: rgb(206, 69, 69);}
+.five-week a:active{ color: rgb(206, 163, 69);}
+.five-week a:focus{ color: rgb(206, 163, 69);}
+.example.selector p { color: blue;}
+.example.selector > div {color: red;}
+.example.selector_group p, .selector_group div {color: darksalmon;}
+
+.example.inherit > div {font-size:1em; border : 1px solid red ; padding: 1em; color: #555;}
+
+.example.spec h4{ color: rgb(206, 69, 69); margin: 10px;}
+.example.spec .cascade{ color: rgb(38, 184, 128);}
+.example.spec .specifi{ color: rgb(90, 48, 230);}
+
+
+/* 6week */
+.six-week .wh { 
+    width:300px; height:100px;
+    background-color:rgb(58, 85, 173); color: #fff;
+    display: flex; justify-content: center; align-items: center;
+}
+.six-week .box{padding: 20px; border: 2px rgb(206, 69, 69); }
+.six-week .box:first-child{ border-style: solid; }
+.six-week .box:nth-child(2){ border-style: dotted; margin: 20px 0;}
+.six-week .box:last-child{ border-style: dashed;}
+
+.six-week .margin-box{ background: rgb(231, 234, 237);}
+.six-week .margin-box:last-child{ margin: 40px;}
+
+.six-week .padding-box{ background: rgb(231, 234, 237);}
+.six-week .padding-box:last-child{ padding: 40px;}
+
+.clear { clear: both;}
+.six-week .left, .right {
+    width: 70px; height: 70px; margin: 5px; 
+    background-color: rgb(38, 184, 128); 
+}
+.six-week .left{ float:left;}
+.six-week .right{ float:right;}
+
+.example.position{position: relative;}
+.rel, .abso, .fix { width: 80px; height: 80px; 
+    background: darkslateblue; color: #fff; 
+    display: flex; justify-content: center; align-items: center; text-align: center; font-weight: lighter; border-radius: 100%;}
+
+.rel{ position: relative; top:0px; left: 150px;}
+.abso { position: absolute; top: 10px; left: 20px;}
+.fix { position: fixed; bottom: 10px; right: 10px; text-decoration: none;}
+#font-size p, #font-weight p, #font-style p{margin: 5px;}
+#font-size h4, #font-weight h4{ margin: 0; color: rgb(206, 69, 69);}
+#font-var p{ font-size: 20px; margin: 0px;}
+

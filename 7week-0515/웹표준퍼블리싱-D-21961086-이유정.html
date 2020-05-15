@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" type="text/css" rel="stylesheet"> 
+    <!-- <link rel="stylesheet" href="css/style.css" type="text/css"> -->
+    <title>Web Standard Publishing</title>
+    <style>
+        @import url(css/style.css);
+    </style>
+</head>
+<body>
+    <p id="big-title">DIGITAL MEDIA DESIGN - 21961086 이유정</p>
+    <div class="container">
+        <header>
+            <h1>Web Standard Publishing</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#n2">2</a></li>
+                    <li><a href="#n3">3</a></li>
+                    <li><a href="#n4">4</a></li>
+                    <li><a href="#n5">5</a></li>
+                    <li><a href="#n6">6</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr>
+        <!-- 2week 0410  -->
+        <p class="date" id="n2">2week - 0410</p>
+        <div class="sec-week">
+            <h2 class="title">문단 관련 요소 - 제목</h2>
+            <div>
+                <h1>&lt;h1&gt;대제목&lt;/h1&gt;</h1>
+                <h2>&lt;h2&gt;중제목&lt;/h2&gt;</h2>
+                <h3>&lt;h3&gt;소제목&lt;/h3&gt;</h3>
+                <h4>&lt;h4&gt;소소제목&lt;/h4&gt;</h4>
+                <h5>&lt;h5&gt;소소소제목&lt;/h5&gt;</h5>
+                <h6>&lt;h6&gt;소소소소제목&lt;/h6&gt;</h6>
+            </div>
+            <p>
+                대제목부터 소제목까지 h2, h2, h3 h4, h5, h6으로 구분할 수 있습니다.<br>
+                잘 구성된 제목은 기기에서 정보 인식성에 효과적입니다.
+            </p>
+            <hr>
+                구분선 &lt;hr/&gt; 태그는 수평선으로 표현되어 구분선 역할을 하는 독립형 태그입니다.
+            <hr>
+            <h2 class="title">문단 관련 요소 - 단락 &lt;p&gt;</h2>
+            <p> 
+                p태그는 단락으로 정의할 때 사용합니다. a, img, 등 인라인 요소와 텍스트만 포함하며 블록 요소는 사용할 수 없습니다.
+            </p>
+            <ul>
+                <li>텍스트를 단락으로 정의할 때</li>
+                <li>a, img 등 인라인 요소와 텍스트만 포함</li>
+                <li>블록 요소는 사용할 수 없다</li>
+            </ul>
+
+            <h2 class="title">문단 관련 요소 - 줄바꿈</h2>
+            <ul>
+                <li>단락에서 강제로 줄바꿈 할 때</li>
+                <li>빈 요소</li>
+                <li>종료 태그 없음</li>
+            </ul>
+            <hr>
+            
+            <h2 class="title">이미지</h2>
+            <h4>이미지&lt;img&gt;</h4>
+            <ul>
+                <li>이미지 개체를 삽입할 때</li>
+                <li>빈요소. 인라인요소</li>
+                <li>src</li>
+                <li>alt</li>
+                <li>width, height</li>
+            </ul>
+
+            <img style="display:block; max-width: 540px; width: 100%;" src="https://4.bp.blogspot.com/-uh5p8LZmpXo/WvlA8ZrkbYI/AAAAAAAACm0/pKylxRcAgB0vv9YA9CcpnonpznZZ_XXhwCLcBGAs/s1600/tumblr_ov5ug2sOit1rwpuwqo3_541.gif" alt="iron-man" title="iron-man">
+            <p>절대경로를 사용한 예입니다.</p>
+
+            <img style="border: 1px solid gray" src="./ironman.gif" alt="iron-man" title="iron-man">
+            <p>상대경로를 사용한 예입니다.<br> 소스파일을 함께 첨부하지 않으면 사진이 표시되지 않습니다.</p>
+            <hr>
+
+            <h2 class="title">하이퍼링크</h2>
+            <h4>하이퍼링크&lt;a&gt;</h4>
+            <ul>
+                <li>텍스트나 이미지에 링크를 설정할 때</li>
+                <li>인라인 요소</li>
+                <li><strong>href</strong> : 이동할 주소</li>
+                <li><strong>target</strong> : _blank 새창띄우기</li>
+                <li><strong>alt</strong> : 대체텍스트</li>
+                <li><strong>title</strong> : 말풍선 텍스트</li>
+            </ul>
+            <a href="http://www.kaywon.ac.kr/" target="_blank" title="타이틀 값입니다.">계원예술대학교 바로가기</a>
+
+            <h4>절대경로</h4>
+            <ul>
+                <li>전체 구조 내에서의 경로 지정</li>
+                <li>http:// 포함하여 전체 경로를 표시</li>
+            </ul>
+
+            <h4>상대경로</h4>
+            <ul>
+                <li>파일의 현재 위치를 기준으로 경로 지정</li>
+                <li><strong>/</strong> : 최상위 폴더</li>
+                <li><strong>./, 생략</strong> : 현재 폴더</li>
+                <li><strong>../</strong> : 이전 폴더</li>
+            </ul>
+            
+            
+            <hr>
+            <div>
+                <h2 class="title">&lt;strong&gt;, &lt;em&gt;</h2>
+                <p>
+                    <strong>&lt;strong&gt; 태그는 글씨를 굵게 출력하여 강조합니다.</strong><br>
+                    <em>&lt;em&gt;태그는 글씨를 기울임꼴로 출력하여 강조합니다.</em>
+                </p>
+            </div>
+        </div>
+        <hr>
+        
+        <!-- 3week 0417  -->
+        <p class="date" id="n3">3week - 0417</p>
+        <div class="thir-week">
+            <h2 class="title">목록 관련 요소</h2>
+            <p style="color:#888888"> : 웹 문서의 다양한 콘텐츠를 마크업하기에 적당한 element <br>
+                - 비순서형, 순서형, 정의형목록
+            </p>
+
+            <h2 class="title">텍스트 관련 요소</h2>
+            <ul class="text-element tl2">
+                <li>강조 strong, em</li>
+                <li>추가 글 및 삭제글 ins, del</li>
+                <li>첨자 sup, sub</li>
+            </ul>
+            <dl>
+                <dt>커리(Curry) 만들기</dt>
+                <dd>
+                    <dl>
+                        <dt>재료</dt>
+                        <dd>
+                            <ul>
+                                <li>카레 가루 100g</li>
+                                <li>닭가슴살 200g</li>
+                                <li>감자 1개</li>
+                                <li>양파 1/2개</li>
+                                <li>당근 1/2개</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>만드는 법</dt>
+                        <dd>
+                            <ol>
+                                <li>카레 가루 <em>8큰술</em>에 물 <em>6큰술</em>을 넣어 풀어놓는다.</li>
+                                <li>닭가슴살, 감자, 양파, 당근을 따로 중불에 살짝</li>
+                                <li>볶아 놓은 재료를 카레를 풀어놓은 물과 함께 냄비에 넣고 물 <em>컵</em>을 부은 후 15분정도 끓인다.</li>
+                            </ol>
+                        </dd>
+                    </dl>
+                </dd>
+            </dl>
+
+            <h3>커리(Curry) 만들기</h3>
+            <h4>재료</h4>
+            <ul>
+                <li>카레 가루 <em>100g</em></li>
+                <li>닭가슴살 <em>200g</em></li>
+                <li>감자 <strong><em>1개</em></strong></li>
+                <li>양파 <em>1/2개</em></li>
+                <li>당근 <em>1/2개</em></li>
+            </ul>
+            <h3>만드는 법</h3>
+            <ol>
+                <li>카레 가루 <del>8큰술</del> <ins>>7.5큰술</ins>에 물 6큰술을 넣어 풀어놓는다.</li>
+                <li>닭가슴살, 감자, 양파, 당근을 따로 중불에 살짝</li>
+                <li>볶아 놓은 재료를 카레를 풀어놓은 물(H<sub>2</sub>O)과 함께 냄비에 넣고 물 2컵을 부은 후 <strong><em>15분</em></strong>정도 끓인다.</li>
+            </ol>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Hyper Text Markup Language</dd>
+            </dl>
+            <hr>
+
+
+            <h2 class="title">테이블 관련요소</h2>
+            <h4>1. 테이블 요소 - table, tr, th, td</h4>
+            <ul>
+                <li>선언 &lt;table&gt;</li>
+                <li>
+                    <p> 행 &lt;tr&gt;<br>
+                        - 제목 셀 &lt;th&gt;<br/>
+                        - 내용 셀 &lt;td&gt;
+                    </p>
+                </li>
+                    
+            </ul>
+            <h4>2. 셀 병합 - rowspan, colspan</h4>
+            <ul>
+                <li>가로로 합치기 colspan</li>
+                <li>세로로 합치기 rowspan</li>
+            </ul>
+            <h4>3. 제목 및 요약문 - caption, summary</h4>
+            <ul>
+                <li>
+                    <strong>Summary</strong><br>
+                    - 간단한 제목보다 테이블의 내용을 설명<br>
+                    - 시각적으로 테이블 접근이 쉽지 않은 사용자를 위한 배려
+                </li>
+                <li>
+                    <strong>Caption</strong><br>- 테이블의 내용을 대표할 수 있는 제목을 작성
+                </li>
+            </ul>
+            <h4>4. 행 그룹화 요소– thead, tfoot, tbody</h4>
+            <ul>
+                <li>선언순서 : thead, tfoot, tbody</li>
+                <li>thead: 테이블의 헤더 영역. 반드시 th요소를 사용하여 제목 셀이라는 것을 명시</li>
+                <li>tfoot: 위치에 관계 없이 테이블의 가장 마지막 행에 출력</li>
+                <li>tbody: 논리적 구분을 위해 여러번 등장할 수도 있다</li>
+            </ul>
+            <h4>5. 제목 셀과 내용 셀의 연관성– scope</h4>
+            <ul>
+                <li>
+                    scope<br>
+                    - scope=“row” : 행의 제목<br/>
+                    - scope="col" : 열의 제목
+                </li>
+            </ul>
+    
+            <h4>출석부</h4>
+            <table>
+                <caption>디지털미디어디자인학과 출석부</caption>
+                <thead>
+                    <tr>
+                        <th>학과</th>
+                        <th>학번</th>
+                        <th>이름</th>
+                        <th>전화번호</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td rowspan="3">디지털미디어디자인</td>
+                        <td>21961086</td>
+                        <td>이유정</td>
+                        <td>010-xxxx-xxxx</td>
+                    </tr>
+                    <tr>
+                        <td>12341234</td>
+                        <td>정유이</td>
+                        <td>010-xxxx-xxxx</td>
+                    </tr>
+                    <tr>
+                        <td>43214321</td>
+                        <td>유이정</td>
+                        <td>010-xxxx-xxxx</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="3" scope="col">총 학생 수</th>
+                        <td>3명</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <hr>
+
+            <h2 class="title">폼 관련 요소</h2>
+            <form method="post">
+                <div>
+                    <h4>1. 폼의 정의와 요소:</h4>
+                    <ul>
+                        <li>
+                            웹 문서가 서로 상호작용을 할 수 있도록 하는 역할 <br>
+                            - 입력 상자, 라디오 버튼, 체크 박스, 목록상자(combo box), 전송버튼
+                        </li>
+                        <li>
+                            폼 요소 <br>
+                            - <strong>action = "URL" </strong>: 폼의 내용을 처리하기 위한 서버의 URL <br>
+                            - <strong>method="get" </strong>: 웹 브라우저의주소 창에 변수 값이 노출. 짧을 경우. 빠름 <br>
+                            - <strong>method="post" </strong>: 긴 경우. 보안 문제 때문에 데이터값을 노출시킬 수 없을 때 <br>
+                        </li>
+                    </ul>
+                    <h4>2. 그룹화, 제목</h4>
+                    <ul>
+                        <li>
+                            그룹화, 제목<br>
+                            - <strong>fieldset</strong> : 여러 개의 폼 요소를 그룹화 하여 좀 더 구조적으로 표현 가능.<br>
+                            - <strong>legend</strong> : 어떠한 성격의 콘텐츠인지 제목 형식으로 알려줌. 한 번만 작성 가능.
+                        </li>
+                    </ul>
+                    <h4>3. 레이블</h4>
+                    <ul>
+                        <li>
+                            각 폼 컨트롤의 연관 관계와 설명을 추가하는 역할 <br>
+                            - 입력 폼과 1:1로 대응 <br>
+                            - 사용하기 어려울 경우 input에 title 속성으로 대체 가능
+                        </li>
+                        <li>명시적 레이블(권장)</li>
+                        <li>암묵적 레이블</li>
+                    </ul>
+                    <h4>4. input</h4>
+                    <ul>
+                        <li>
+                            Type <br>
+                            - <strong>text</strong> : 한 줄 글 상자 <br>
+                            - <strong>password</strong> : 비밀번호 입력. *나 ●로 표시 <br>
+                            - <strong>radio</strong> : 여러 개의 라디오 버튼 중 하나만 선택 가능 (같은 name명 끼리 묶음) <br>
+                            - <strong>checkbox</strong> : 다중 선택이 가능한 체크 박스 <br>
+                            - <strong>file</strong> : 파일을 첨부 형태로 서버로 보낼 때 사용하는 컨트롤
+                        </li>
+                    </ul>
+                    <h4>5. select, option, optgroup</h4>
+                    <ul>
+                        <li>
+                            select <br>
+                            - <strong>size</strong> : 기본1. 출력에 확보할 줄 개수 지정
+                        </li>
+                    </ul>
+                    <h4>6. textarea</h4>
+                    <ul>
+                        <li>
+                            textarea <br>
+                            - <strong>cols</strong> : 가로 글자 수 <br>
+                            - <strong>rows</strong> : 줄 개수
+                        </li>
+                    </ul>
+                    <h4>7. button</h4>
+                    <ul>
+                        <li>
+                            type <br>
+                            - <strong>button</strong> : 일반<br>
+                            - <strong>submit</strong> : 전송<br>
+                            - <strong>reset</strong> : 취소
+                        </li>
+                    </ul>
+        
+                </div> 
+                
+                <fieldset> <!-- 그룹화 -->
+                    <legend>실습용 폼</legend>
+                    <label for="userid">아이디</label>
+                    <input type="text" name="id" id="userid" placeholder="아이디를 입력해주세요."> <br>
+        
+                    <label for="userpw">패스워드</label>
+                    <input type="password" name="pw" id="userpw" placeholder="패스워드를 입력해주세요."> <br>
+                    
+                    <hr>
+        
+                    <input type="radio" name="grade" value="독서" id="grade1" checked="checked"> 
+                    <label for="grade1">독서</label>
+                    <br>
+                    <input type="radio" name="grade" value="운동" id="grade2">
+                    <label for="grade2">운동</label> <br>
+        
+                    <input type="checkbox" name="chk" checked="checked">
+                    <input type="checkbox" name="chk"> <br>
+        
+                    <input type="file">
+        
+                    <hr>
+                    <textarea rows="5" cols="20" name="text" placeholder="내용을 입력하세요."></textarea>
+                    <button>전송</button> <br>
+                </fieldset>
+        
+                <fieldset>
+                    <legend>실습 응용</legend>
+                    <div class="form_wrap">
+        
+                        <h3><label for="id">아이디</label></h3>
+                        <input type="text" id="id" name="id" placeholder="아이디를 입력하세요."> <br>
+                        <h3><label for="pw">비밀번호</label></h3>
+                        <input type="password" id="pw" name="pw" placeholder="비밀번호를 입력하세요"><br>
+        
+        
+                        <h3><label>성별</label></h3>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female" class="gen">여성</label>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male" class="gen">남성</label>
+                        
+                        <h3><label for="name">이름</label></h3>
+                        <input id="name" type="text" name="name" >
+                        
+                        <h3><label for="birth">생년월일</label></h3>
+                        <input id="birth" type="text" name="birth" placeholder="년(4자)" >
+                        <select id="birth_m" name="birth" >
+                            <option value>월</option>
+                            <option value="1">1월</option>
+                            <option value="2">2월</option>
+                            <option value="3">3월</option>
+                            <option value="4">4월</option>
+                            <option value="5">5월</option>
+                            <option value="6">6월</option>
+                            <option value="7">7월</option>
+                            <option value="8">8월</option>
+                            <option value="9">9월</option>
+                            <option value="10">10월</option>
+                            <option value="11">11월</option>
+                            <option value="12">12월</option>
+                        </select>
+                        <input id="birth_d" type="text" name="birth" placeholder="일" >
+                        
+                        <br>
+        
+                        <h3><label for="phone">휴대전화</label></h3>
+                        <input id="phone" type="text" name="phone" placeholder="전화번호 입력" >
+                        <input type="button" id="certify" name="phone" value="인증번호 받기" ><br>
+                        <h3><label for="certify_confirm">인증번호 확인</label></h3>
+                        <input id="certify_confirm" type="text" name="certify_confirm" placeholder="인증번호를 입력하세요." >
+                        
+                        <hr>
+                        <button type="submit" value="가입하기" id="join">가입하기</button>
+                        <button type="reset" value="취소하기" id="cancel">취소하기</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <form>
+            <h2 class="title">폼 관련 요소</h2>
+            <h4>select, option, optgroup</h4>
+            <input type="text" name="id">
+            <select name="age" size="10">
+                <optgroup label="젋은이">
+                    <option value="10">10대</option>
+                    <option value="20">20대</option>
+                    <option value="30" selected="selected">30대</option>
+                </optgroup>
+                <optgroup label="늙은이">
+                    <option value="40">40대</option>
+                    <option value="50">50대</option>
+                    <option value="60">60대</option>
+                    <option value="70">70대</option>
+                    <option value="80">80대</option>
+                    <option value="90">90대</option>
+                </optgroup>
+            </select>
+            <button type="submit">전송</button>
+            <button type="reset">취소</button>
+            <h4>button</h4>
+            <ul>
+                <li>
+                    type <br>
+                    - button: 일반 
+                    - submit: 전송 
+                    - reset: 취소
+                </li>
+            </ul>
+        </form>
+
+        <hr>
+
+        <div class="group">
+            <h2 class="title">그룹화 요소</h2>
+            <h4>블록 그룹화 요소(div)</h4>
+            <ul>
+                <li>분할, 나누기의 의미. 그룹핑(grouping)의 역할.</li>
+                <li>id와 class로 해당 그룹의 의미를 부여</li>
+                <li>블록요소를 그룹화하기 위해</li>
+                <li>레이아웃 구현</li>
+                <li>논리적인 구조를 고려하여 서로 연관성 있는 콘텐츠를 그룹핑</li>
+            </ul>
+            <h4>인라인 그룹화 요소(span)</h4>
+            <ul>
+                <li>인라인 요소를 그룹화</li>
+                <li>d와 class로 해당 그룹의 의미를 부여</li>
+                <li>인라인 요소이므로 p, ul 같은 블록요소를 포함할 수 없다.</li>
+            </ul>
+
+            <ul class="cafe-latte">
+                <li>
+                    카페라떼 - 
+                    <span class="size">Small</span>
+                    <span class="price">3,000원</span>
+                </li>
+                <li>
+                    카페라떼 - 
+                    <span class="size">Regular</span>
+                    <span class="price">3,500원</span>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        
+         <!-- 4week 0424 -->
+        <p class="date" id="n4">4week - 0424</p>
+        <div class="four-week">
+            <h2 class="title">HTML5 요소</h2>
+            <section>
+                <h4>&lt;section&gt; 요소</h4>
+                <section>
+                    <h4>&lt;section&gt; 요소</h4>
+                    <ul>
+                        <li>일반적으로 콘텐츠를 장이나 절 등으로 구분하고자 할 경우에 사용</li>
+                        <li>반드시 헤딩 관련 요소를 사용하여 해당 섹션의 제목을 지정</li>
+                        <li>div의 대치요소가 아니다. 열이나 행을 구분하기 위해 사용해서는 안된다.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>섹션 요소의 콘텐츠 모델</h2>
+                    <p>section 요소는 섹셔닝 콘텐츠에 속한 요소로 아웃라인에 영향을 줍니다.</p>
+                </section>
+            </section>
+            
+            <h4>&lt;nav&gt; 요소</h4>
+            <ul>
+                <li>내비게이션을 마크업 할 때</li>
+                <li>내비게이션은 메인 메뉴나 서브 메뉴 등을 의미</li>
+                <li>서로 다른 페이지로 이동할 수 있는 링크 포함</li>
+                <li>모든 목록 형태의 하이퍼링크 콘텐츠에 nav요소를 사용하는 것은 바람직 하지않다.</li>
+                <li>페이지의 주요 내비게이션에 사용해야 한다고 규정</li>
+            </ul>
+            <nav>
+                <ul>
+                    <li><a href="www.naver.com">네이버</a></li>
+                    <li><a href="www.google.com">구글</a></li>
+                    <li><a href="www.daum.net">다음</a></li>
+                    <li><a href="www.nate.co.kr">네이트</a></li>
+                </ul>
+            </nav>
+
+            <h4>&lt;article&gt; 요소</h4>
+            <ul>
+                <li>독립된 하나의 콘텐츠</li>
+                <li>블로그의 포스트, 뉴스 본문</li>
+                <li>독립된 하나의 콘텐츠로 분류할 때 해당 콘텐츠를 별도로 배포하거나 재사용하기 위한 경우</li>
+                <li>&lt;section&gt; 요소와 구문이 애매할 경우도 있기 때문에 콘텐츠의 의미가 성격을 고려하여 사용하는 것이 바람직</li>
+            </ul>
+            <article class="post">
+                <h4>나는 돌덩이</h4>
+                뜨겁게 지져봐라.나는 움직이지 않는 돌덩이<br>
+                거세게 때려봐라.나는 단단한 돌덩이<br>
+                깊은 어둠에 가둬봐라.나는 홀로 빛나는 돌덩이<br>
+                부서지고 재가되고 썩어버리는<br>
+                섭리마저 거부하리<br>
+                살아남은 나<br>
+                나는 다이아<br><br>
+                中 이태원클라쓰 12화
+                <footer>
+                    <p> 이서 / 2020-04-28 </p>
+                </footer>
+                <article class="reply">
+                    <h4>글이. 좋네요. 퍼가요~ ♥ </h4>
+                    <footer>
+                        <p>유정 / 2020-04-29</p>
+                    </footer>
+                </article>
+            </article>
+
+            <h4>&lt;aside&gt; 요소</h4>
+            <ul>
+                <li>메인콘텐츠와 관련이 적은 콘텐츠를 마크업 할 때 사용</li>
+                <li>사이드 바, 광고 등의 콘텐츠가 적절 (부가적인 콘텐츠)</li>
+                <li>명확히 정의하기 어려운 경우도 많다.</li>
+                <li>콘텐츠의 틀을 정해놓고 사용하기보다 콘텐츠의 중요성이나 의미를 고려하여 사용</li>
+            </ul>
+
+            <aside>
+                <h4>이유정 인생 드라마</h4>
+                <ul>
+                    <li><a href="http://program.tving.com/tvn/tvnfirstlife/">이번생은 처음이라</a></li>
+                    <li><a href="http://program.tving.com/tvn/doctorlife">슬기로운 의사생활</a></li>
+                    <li><a href="http://program.tving.com/tvn/prisonplaybook/">슬기로운 감빵생활</a></li>
+                    <li><a href="http://tv.jtbc.joins.com/Youth">청춘시대</a></li>
+                    <li><a href="http://program.tving.com/tvn/searchwww">검색어를 입력하세요 WWW</a></li>
+                </ul>
+            </aside>
+
+
+            <h4>&lt;header&gt; 요소</h4>
+            <ul>
+                <li>페이지 헤더, 섹션 헤더로 사용</li>
+                <li><strong>페이지 헤더</strong> : 제목,로고,검색등을포함</li>
+                <li><strong>섹션 헤더</strong> : 내에서 사용 시 해당 섹션의 헤더의 의미</li>
+            </ul>
+
+            <h4>&lt;footer&gt; 요소</h4>
+            <ul>
+                <li>페이지 푸터, 섹션 푸터로 사용</li>
+                <li><strong>페이지 푸터</strong> : 사이트 연락처 정보 및 저작권</li>
+                <li><strong>섹션 푸터</strong> : 해당 섹션의 푸터의 의미</li>
+            </ul>
+        </div>
+        <footer>
+            16038 경기도 의왕시 계원대학로 66(내손동) 계원예술대학교 | admin@kaywon.ac.kr
+            <p class="copyright">
+                copyright(c) 2018. Kaywon University of Art & Design.
+            </p>
+        </footer>
+        <hr>
+
+        <!-- 5week 0501 -->
+        <p class="date" id="n5">5week - 0501</p>
+        <div class="five-week">
+            <h2 class="title">전체 선택자</h2>
+            <ul>
+                <li>모든 요소를 선택하는 방법으로 “*”를 선택자로 선언한다</li>
+                <li>유니버설 선택자</li>
+            </ul>
+            <div class="example">
+                <p> * { margin: 0; padding: 0; }</p>
+            </div>
+            
+            <h2 class="title">요소 선택자</h2>
+            <ul>
+                <li>HTML 요소를 선택하는 방법</li>
+                <li>type선택자, 태그 선택자</li>
+                <li>h1,p,div등</li>
+            </ul>
+
+            <br><hr>
+
+            <h2 class="title">가상 요소, 가상 클래스</h2>
+            <ul>
+                <li>실제로 존재하지 않는 요소를 마치 존재하는 것처럼 이용하는 방법</li>
+                <li>
+                    가상요소 선택자 <br>
+                    - 콘텐츠 영역의 앞, 뒤에 가상 콘텐츠 추가 <br>
+                    - :before, :after, :first-line, :first-letter 
+                </li>
+                <li>가상 클래스 선택자 <br>
+                    - 상황에 따라 구분
+                    - :first-child, :link, visited, :hover, :active, :focus
+                </li>
+            </ul>
+
+            <h4>가상 요소 선택자</h4>
+            <ul>
+                <li>
+                    :first-line <br>
+                    - 요소의 첫번째 줄에 있는 콘텐츠만 선택하여 스타일을 지정
+                    - 크기에 따라 유동적
+                </li>
+                <li>
+                    :first-letter<br>
+                    – 요소의 첫 글자만 선택하여 스타일을 지정
+                </li>
+            </ul>
+            <div class="example" id="ex_fir">
+                <h4>:first-line</h4>
+                <p>안녕하세요. D반 이유정입니다. 반갑습니다. 안녕하세요. D반 이유정입니다. 반갑습니다. 안녕하세요. D반 이유정입니다. 반갑습니다. 안녕하세요. D반 이유정입니다. 반갑습니다. 안녕하세요. D반 이유정입니다. 반갑습니다. 안녕하세요. D반 이유정입니다. 반갑습니다. 안녕하세요. D반 이유정입니다. 반갑습니다. 안녕하세요. D반 이유정입니다. 반갑습니다. 안녕하세요. D반 이유정입니다. 반갑습니다.</p>
+                <hr>
+                <h4>:first-letter</h4>
+                <div>안녕하세요. D반 이유정입니다. 반갑습니다.</div>
+            </div>
+            <ul>
+                <li>
+                    :before, :after<br>
+                    – 가상의 콘텐츠를 이전이나 이후에 추가할 수 있는 선택자<br>
+                    – content 속성에 원하는 문자열을 지정<br>
+                    – 스타일을 위해서 사용. 문서에 내용을 추가하는 용도로 사용하지 않도록 주의
+                </li>
+            </ul>
+            <div class="example">
+                <p class="before">:before 가상 요소 선택자 사용</p>
+                <p class="after">:after 가상 요소 선택자 사용</p>
+            </div>
+            <ul>
+                <li>
+                    :link, :visited, :hover, :active, :focus <br>
+                    – <strong>:link </strong>방문하지 않은 링크 방문한 링크 <br>
+                    – <strong>:visited </strong>방문한 링크 <br>
+                    – <strong>:hover </strong>마우스 오버 <br>
+                    – <strong>:active </strong>활성화 <br>
+                    – <strong>:focus </strong>포커스가 생긴 경우 <br>
+                </li>
+            </ul>
+            <div class="example">
+                <a href="http://www.naver.com">네이버 바로가기</a>
+            </div>
+
+            <br><hr>
+
+            <h2 class="title">선택자 조합</h2>
+            <ul>
+                <li>
+                    하위선택자 <br>
+                    – 상위 요소가 포함하고 있는 모든 하위 요소에 스타일을 지정할 때 <br>
+                    – 선택자와 선택자를 공백으로 구분하여 선언
+                </li>
+                <li>
+                    자식 선택자 <br>
+                    – 부모 요소의 바로 다음에 있는 자식 요소에 스타일을 적용 <br>
+                    – 선택자와 선택자를 왼쪽 부등호로 구분하여 선언
+                </li>
+            </ul>
+            <div class="example selector">
+                <h4>하위선택자</h4>
+                <p>.selector p { color : blue; }</p>
+                <hr>
+                <h4>자식 선택자</h4>
+                <div>.selector > div { color : red; }</div>
+            </div>
+
+            <h2 class="title">선택자 그룹화</h2>
+            <ul>
+                <li>
+                    다수의 요소에 똑같은 선언을 지정할 경우 <br>
+                    – 반복해서 작성하는 대신 선택자를 그룹화하여 표현<br>
+                    – 콤마(,)를 사용하여 구분
+                </li>
+            </ul>
+            <div class="example selector_group">
+                <p>선택자를 그룹화합니다.</p>
+                <div><strong>.selector_group p, .selector_group div {color: darksalmon;}</strong></div>
+            </div>
+
+            <br><hr>
+
+            <h2 class="title">상속(inherit)</h2>
+            <ul>
+                <li>
+                    상위요소에 적용한 스타일이 하위 요소까지 <br>
+                    – 모든 스타일이 똑같이 상속되는 것이 아니라 일부는 상속의 대상에서 제외<br>
+                    – 콤마(,)를 사용하여 구분
+                </li>
+            </ul>
+            <div class="example inherit">
+                <div>
+                    <p>CSS의 속성은 기본적으로 하위 요소로 상속되는 속성과 상속되지 않는 속성이 있습니다.</p>
+                    <p>border, margin, padding, float, position 등의 속성은 하위 요소에 상속되지 않습니다.</p>
+                </div>
+            </div>
+
+            <br><hr>
+
+            <h2 class="title">겹침(cascading)과 개별성(specificity)</h2>
+            <ul>
+                <li>하나의 콘텐츠에 여러 가지의 스타일이 중복 적용되어 충돌이 발생했을 때</li>
+            </ul>
+            <div class="example spec">
+                <h4>단계적으로 적용되는 스타일</h4>
+                <h4 class="cascade">단계적으로 적용되는 스타일</h4>
+                <h4 class="specifi">단계적으로 적용되는 스타일</h4>
+            </div>
+        </div>
+
+        <!-- 6week 0508 -->
+        <p class="date" id="n6">6week - 0508</p>
+        <div class="six-week">
+            <h2 class="title">박스 모델</h2>
+            <ul>
+                <li>width / height <br>
+                    - 박스의 크기를 지정 / 블록 요소, 블록 요소의 성격을 가지는 요소<br>
+                    - width : 길이 | 퍼센트 | auto | inherit <br>
+                    - height : 길이 | 퍼센트 | auto | inherit
+                </li>
+            </ul>
+            <div class="example">
+                <div class="wh"> width: 300px / height: 100px</div>
+            </div>
+
+            <ul>
+                <li>border<br>
+                    – 테두리를지정/선모양,굵기,색상/위,아래,오른쪽,왼쪽<br>
+                    – border, border-style, border-width, border-color<br>
+                    – Border(-left, -right, -top, -bottom):굵기, 모양, 색상<br>
+                    – 모양 : none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset
+                </li>
+            </ul>
+            <div class="example">
+                <div class="box"> solid</div>
+                <div class="box"> dotted</div>
+                <div class="box"> dashed</div>
+            </div>
+
+            <ul>
+                <li>margin <br>
+                    Border를 기준으로 바깥쪽 여백<br>
+                    – margin(-top, -right, -bottom, -left) : 길이 | 퍼센트 | auto | inherit<br>
+                    – margin:10px : 네 곳에 같은 값 적용<br>
+                    – margin:5px 10px : 위/아래, 좌/우 적용<br>
+                    – margin:5px 10px 15px : 위, 좌/우, 아래 적용<br>
+                    – margin:5px 10px 15px 20px : 위, 우, 아래, 좌 적용
+                </li>
+            </ul>
+            <div class="example">
+                <div class="margin-box"> margin : 0</div> <hr>
+                <div class="margin-box"> margin : 40px</div>
+            </div>
+            <ul>
+                <li>padding
+                    – Border를 기준으로 안쪽 여백<br>
+                    – padding(-top, -right, -bottom, -left) : 길이 | 퍼센트 | auto | inherit<br>
+                    – padding:10px : 네 곳에 같은 값 적용<br>
+                    – padding:5px 10px : 위/아래, 좌/우 적용<br>
+                    – padding:5px 10px 15px : 위, 좌/우, 아래 적용<br>
+                    – padding:5px 10px 15px 20px : 위, 우, 아래, 좌 적용
+                </li>
+            </ul>
+            <div class="example">
+                <div class="padding-box"> padding : 0</div>
+                <hr>
+                <div class="padding-box"> padding : 40px</div>
+            </div>
+
+            <br><hr>
+
+            <h2 class="title">플로트(float) & Clear</h2>
+            <ul>
+                <li>float<br>
+                    – 박스의 위치를 부모 요소의 안에서 왼쪽, 오른쪽으로 이동 <br>
+                    – 문서의 일반적인 흐름에 영향을 받지 않으면서 이동된 위치에 뜸 <br>
+                    – 주변 박스는 위치가 변경되어 플로트된 요소와 나란히 배치 <br>
+                    – float : left | right | none | inherit
+                </li>
+                <li>clear<br>
+                    – Float의 해제<br>
+                    – float 다음에 오는 문단에 clear 속성을 지정<br>
+                    – clear : left | right | both | none | inherit
+                </li>
+            </ul>
+            <div class="example">
+                <h4>float:left</h4>
+                <div class="float-left">
+                    <div class="left"></div>
+                    <div class="left"></div>
+                    <div class="left"></div>
+                    <div class="left"></div>
+                    <div class="clear"></div>
+                </div>
+                <hr>
+                <h4>float:right</h4>
+                <div class="float-right">
+                    <div class="right"></div>
+                    <div class="right"></div>
+                    <div class="right"></div>
+                    <div class="right"></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            
+            <br><hr>
+            
+            <h2 class="title" id="fixed">포지션(position)</h2>
+            <ul>
+                <li>position <br>
+                    – 박스에 대한 배치를 변경 / 기본 static <br>
+                    – relative : 자기 자신의 위치를 기준으로 상대적으로 움직임 <br>
+                    – absolute : 자신이 포함된 컨테이닝 블록을 기준으로 배치 <br>
+                    – fixed : 스크린을 기준으로 박스를 배치 <br>
+                    – position : static | relative | absolute | fixed | inherit <br>
+                    – top, right, bottom, left : 길이 | 퍼센트 | auto | inherit
+                </li>
+            </ul>
+            <div class="example position">
+                <div class="rel">relative </div>
+                <div class="abso">absolute </div>
+                <a href="#fixed" class="fix">fixed <br> 이동</a>
+            </div>
+
+            <br><hr>
+
+            <h2 class="title">타이포그래피</h2>
+            <ul>
+                <li>font-family <br>
+                    – 글꼴을 지정할 때<br>
+                    – 하나 이상(“,”로 구분)의 글꼴을 선언<br>
+                    – 마지막에 대표 패밀리(serif, sans-serif, cursive, fantasy, monospace)를 명시<br>
+                    – font-family : 글꼴 패밀리명, 대표 패밀리명
+                </li>
+                <li>font-size<br>
+                    – 글자크기를지정할때<br>
+                    – 절대크기 : small, medium, large, pt, pc, cm, mm – 상대크기:px,em,ex,%<br>
+                    – font-size : 키워드 | 길이 | 퍼센트 | inherit
+                </li>
+            </ul>
+            <div class="example" id="font-size">
+                <h4>Noto Sans KR</h4>
+                <hr>
+                <p style="font-size: 10px;">Typography 10px</p>
+                <p style="font-size: 20px;">Typography 20px</p>
+                <p style="font-size: 30px;">Typography 30px</p>
+                <hr>
+                <p style="font-size: 1em;">Typography 1em</p>
+                <p style="font-size: 2em;">Typography 2em</p>
+                <p style="font-size: 3em;">Typography 3em</p>
+                <hr>
+                <p style="font-size: small;">Typography small</p>
+                <p style="font-size: medium;">Typography medium</p>
+                <p style="font-size: large;">Typography large</p>
+            </div>
+            <ul>
+                <li>font-weight<br>
+                    – 글꼴을굵게장식할때<br>
+                    – normal, bold, bolder, lighter<br>
+                    – 100~900 (normal:400, bold:700)<br>
+                    – font-weight : 키워드 | 100~900 | inherit
+                </li>
+            </ul>
+            <div class="example" id="font-weight">
+                <h4>Noto Sans KR</h4>
+                <hr>
+                <p style="font-weight: lighter;">Typography lighter</p>
+                <p style="font-weight: 10px;">Typography normal</p>
+                <p style="font-weight: bold;">Typography bold</p>
+                <p style="font-weight: bolder;">Typography bolder</p>
+                <hr>
+                <p style="font-weight: 100;">Typography 100</p>
+                <p style="font-weight: 300;">Typography 300</p>
+                <p style="font-weight: 400;">Typography 400</p>
+                <p style="font-weight: 500;">Typography 500</p>
+                <p style="font-weight: 700;">Typography 700</p>
+                <p style="font-weight: 900;">Typography 900</p>
+            </div>
+            <ul>
+                <li>font-style <br>
+                    – 글꼴의 스타일을 지정할 때<br>
+                    – normal, italic, oblique<br>
+                    – font-style : normal | italic | oblique
+                </li>
+            </ul>
+            <div class="example" id="font-style">
+                <p>Typography normal</p>
+                <p style="font-style: italic;">Typography italic</p>
+                <p style="font-style: oblique;">Typography oblique</p>
+            </div>
+            <ul>
+                <li>font-variant<br>
+                    – 영문 글꼴의 소문자를 대문자로 변경할 때<br>
+                    – normal, small-caps<br>
+                    – small-caps : 크기가 작은 대문자로 출력
+                </li>
+            </ul>
+            <div class="example" id="font-var">
+                <p style="font-variant: normal">I AM REGULAR UPPERCASE</p>
+                <p style="font-variant: small-caps">I am Small Caps</p>
+            </div>
+        </div>
+        <br><hr>
+        
+        <!-- 7week 0515 -->
+        <p class="date" id="n6">7week - 0515</p>
+        <div class="seven-week">
+
+        </div>
+        
+    </div>
+</body>
+</html>

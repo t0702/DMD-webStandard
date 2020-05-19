@@ -1,0 +1,132 @@
+body{ position: relative;}
+.sho-name{
+    font-size: 60px;
+    font-family: var(--main-font);
+    margin-top: 110px;
+    margin-bottom: 50px;
+}
+.gradient1{
+    background: linear-gradient(to right, #f00844, #64c057);
+    height: 350px; color: #fff; padding: 30px 0;
+}
+.gradient1 > .container{ position: relative;}
+.gradient1 h2{
+    font-size: 70px;
+    font-family: var(--main-font);
+    margin-bottom: 30px;
+}
+.gradient1 p{
+    font-weight: lighter; 
+    font-size: 14px; 
+    line-height: 1.9em;
+    width: 55%;
+}
+.big-yeezy{
+    width: 550px;
+    position: absolute;
+    top: -90%; right: -6%;
+    z-index: 2;
+    animation: yeezy 2.2s ease-in-out infinite alternate;
+}
+@keyframes yeezy {
+    0% {top: -100%; }
+    100% {top: -90%;}
+}
+
+
+
+.circle-1{
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background-color: #fff;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, .2));
+    position: absolute;
+    top:-70%; right: 0;
+}
+
+.shoes{ display: flex; justify-content: space-between; align-items: center; margin: 70px auto; height: 190px;}
+.shoes img{width: 160px; filter: drop-shadow(0 0 10px rgba(0, 0, 0, .2)); transition: .2s; cursor:pointer;}
+.shoes div{ display: flex; flex-direction: column; align-items: center;}
+.shoes p{margin: 20px 0; font-weight: lighter; font-size: 15px;}
+.shoes img:hover{width: 150px;}
+.shoes img:hover p{font-weight: bold;}
+
+.the-ten{text-align: right;}
+.gradient2 > .container {display: flex; flex-direction: column; align-items: flex-end; position: relative;}
+.gradient2{
+    background: linear-gradient(to right, #000, #b90000);
+    height: 350px; color: #fff; padding: 30px 0;
+}
+.gradient2 h2{
+    font-size: 70px;
+    font-family: var(--main-font);
+    margin-bottom: 30px;
+}
+.gradient2 p{ 
+    font-weight: lighter; 
+    font-size: 14px; 
+    line-height: 1.9em;
+    width: 50%;
+}
+.circle-2{
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background-color: #fff;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, .2));
+    position: absolute;
+    top:-70%; left: 0;
+}
+.big-the-ten{
+    width: 550px;
+    position: absolute;
+    top: -90%; left: -6%;
+    z-index: 2;
+    animation: ten 1.5s ease-in-out infinite alternate;
+}
+@keyframes ten {
+    0% {top: -90%; }
+    100% {top: -85%;}
+}
+
+
+/* 버튼 애니메이션 */
+.buynow {
+    margin-top: 40px;
+    position:relative;    
+    width: 150px; height: 50px;
+    font-weight: lighter;
+    letter-spacing:5px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: opacity .15s;
+    border: 1px solid #fff;
+    color:#fff;
+    cursor: pointer;
+}
+.buynow::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 8px; height: 8px;
+    background: #fff; opacity: 0;
+    border-radius: 100%;
+    transform: scale(1,1);
+    transform-origin: 50% 50%;
+}
+.buynow:hover { opacity: 1; }
+.buynow:hover::after {
+    animation: buttonripple 1s ease-out;
+    text-decoration: none;
+}
+
+@keyframes buttonripple {
+    0% { transform: scale(0, 0); opacity: .2 ;}
+    20% { transform: scale(25, 25); opacity: .2;}
+    100% { opacity: 0; transform: scale(40, 40);}
+}

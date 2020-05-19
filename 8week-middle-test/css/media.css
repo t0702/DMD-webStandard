@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+/* font-family: 'Archivo Black', sans-serif; */
+
+:root{ --main-font: 'Archivo Black', sans-serif;}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.container{max-width: 1100px; width:100%; margin: 0 auto;}
+
+.title a{font-size: 20px; font-family: var(--main-font); }
+.title a:hover,
+.title a:active,
+.title a:focus,
+.title a:link,
+.title a:visited{color: #fff; text-decoration: none;}
+
+
+.nav-logo{width: 50px;}
+.wrap header{display: flex; justify-content: space-between; align-items: flex-end; color: #fff;}
+.wrap nav ul li{ list-style: none; padding: 0 20px; font-size: 14px;}
+.wrap nav ul{display:flex; }
+nav ul li a:hover,
+nav ul li a:active,
+nav ul li a:focus,
+nav ul li a:link,
+nav ul li a:visited{color: #fff; text-decoration: none;}
+/* ------------------------ */
+
+body{ 
+    background-color: #000; 
+    position: relative; 
+}
+.wrap {position: relative; height: 100vh;}
+hr {margin: 20px auto; opacity: .5;}
+.v-wrap{
+    position: absolute; 
+    width: 100vw; height: 100vh;
+    object-fit: cover; 
+    overflow: hidden;
+    z-index: -1; 
+}
+video { 
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; 
+}
+
+
+.blind{
+    position: absolute;
+    background: rgba(0, 0, 0, .5);
+    top: 0; left: 0;
+    width: 40%;
+    height: 100vh;
+    z-index: -1;
+    min-width: 350px;
+}
+.content{
+    width:300px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.content h2{ font-weight: lighter; font-size: 40px; margin-bottom: 20px;}
+.content p{ font-size: 14px; font-weight: lighter; line-height: 1.9em;}
+.content p:last-child{font-weight: bold; font-size: 20px;}
+
+.media-link {
+    position: absolute; 
+    right: 0; top: 50%;
+    transform: translateY(-50%);
+}
+.media-link ul li{
+    list-style: none;
+    margin: 30px 0;
+    text-align: right;
+
+    
+}
+.media-link ul li span{
+
+    font-size: 60px; font-weight: bold; border-bottom: 3px solid #fff;
+    color: #fff; transition: .3s;
+    cursor: pointer;
+}
+.media-link ul li span:hover{color: #000;}
+.media-link a:active,
+.media-link a:focus,
+.media-link a:link,
+.media-link a:visited{color: #fff; text-decoration: none; transition: .3s;}
+.media-link a:hover{ color: black;}
+.media-link a{font-size: 60px; font-weight: bold; border-bottom: 3px solid #fff;}
+
+
+
+/* The Modal (background) */
+.modal {
+    position: fixed; 
+    z-index: 1;
+    left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    display:none;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    display:flex;
+    align-items: center;
+    background-color: #fefefe;
+    position: absolute;
+    top:50%; left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #888;
+    width: 800px; 
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px; right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+

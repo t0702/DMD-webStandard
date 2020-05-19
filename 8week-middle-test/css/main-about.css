@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* main */
+.main{ 
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.main-v{ 
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.bl-logo{
+    position: absolute;
+    width: 50px;
+    top:30px;
+    left: 30px;
+}
+.m-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    z-index: 2;
+}
+.m-content img{width: 100px;}
+.m-content h1{
+    font-size: 50px; margin: 20px 0 10px; 
+    font-family: var(--main-font);
+}
+.m-content p{font-weight: lighter;}
+.click{
+    position: absolute;
+    bottom: -80%;
+    width: 70px; height: 70px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-decoration: none; 
+    display: flex; justify-content: center; align-items: center;
+    animation: click 1s ease-in-out infinite alternate;
+}
+
+@keyframes click{
+    0%{ bottom: -80%; border-color: rgba(255, 255, 255, 0);}
+    100%{ bottom: -75%; border-color: rgba(255, 255, 255, .5)}
+
+}
+
+
+.click:hover, 
+.click:active, 
+.click:focus, 
+.click:link, 
+.click:visited{color: #fff;}
+
+.official{
+    height: 30px; 
+    border-bottom: solid 1px #fff;
+    text-decoration: none;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    color: #fff;
+}
+.official:hover,
+.official:active,
+.official:focus,
+.official:link,
+.official:visited{color: #fff; }
+
+/* about nike */
+body{
+    background-color: black;
+    background-image: url(../assets/about-bg.svg);
+    background-position:  top;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+.top-logo{ width: 130px;}
+.top-content{display: flex; flex-direction: column; align-items:center; padding: 70px 0;}
+.top-content h2{ font-size: 35px; font-family: var(--main-font); margin: 20px 0;}
+.top-content p{ font-size: 14px; text-align: center;}
+
+.puzzle{border: solid 0.5px rgba(255, 255, 255, .5);}
+.puz1{ 
+    width: 100%;
+    max-height:320px;
+    height: 320px;
+    background-image: url(../assets/about_img1.png);
+    background-size: cover;
+    background-position: 100% 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.puz1 .shop-btn{
+    width: 150px;
+    height: 50px;
+    border: 1px solid #fff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+.puz1 .shop-btn:hover{
+    background-color: #000;
+}
+.puz2{
+    height: 320px;
+    display: flex;
+}
+.puz2-1{
+    width: 35%;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.puz2-1 h3, .puz3-2 h3{font-size: 35px; font-family: var(--main-font); text-align: center; margin-bottom: 20px;}
+.puz2-1 p, .puz3-2 p{font-size: 14px; line-height: 1.9em; font-weight: lighter;}
+.puz2-2 { width: 65%; overflow:hidden;}
+.about-v{ width: 100%;}
+
+.puz3{
+    width: 100%;
+    height: 320px;
+    display: flex;
+}
+.puz3-1{ width: 35%; height: 320px; overflow:hidden;}
+.puz3-1 img{ width:100%;}
+.puz3-2 { 
+    width: 65%; background-color: #000; padding: 30px;
+    display: flex; flex-direction:column; justify-content: center; align-items:center;
+}
+.puz3-2 h3{color: #fff; line-height: 1.5em;}
+.puz3-2 p{color: #fff; }
+
+.bottom-content{
+    margin: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+.bottom-content h4{ font-size: 30px; font-family: var(--main-font); margin: 50px 0 20px;}
+.bottom-content p {font-size: 14px; font-weight: lighter; line-height: 1.9em; text-align: center;}
+.bottom-content p:last-child{width: 70%;}
+.short-line{height: 3px; width:25px; background-color: #fff; margin: 100px 0;}
+
+.founder img{border-radius: 50%; border: 1px solid rgba(255, 255, 255, .5);}
+.founder-name {border-bottom: 1px solid #fff; padding-bottom: 5px;}
+
+.main-logo{
+    width: 100px;
+}
+
+path { 
+    stroke: #fff;
+    fill: #fff;
+    stroke-dasharray: 1350;
+    opacity: 10;
+    animation : dash 2s forwards;
+}
+
+@keyframes dash{
+    0%{
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1350;
+    }
+
+    30% {
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 1350;
+    }
+    70%{
+        fill: rgba(255, 255, 255, 0);
+    }
+    100%{
+        opacity: 10;
+        fill: rgba(255, 255, 255, 1);
+        stroke-dashoffset: 0;
+    }
+}
+
+.circle{
+    width: 3000px;
+    height: 3000px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid white;
+    border-radius: 50%;
+    animation: circle 1s  forwards;
+    animation-delay: 1s;
+    z-index: 1;
+}
+
+@keyframes circle{
+    0%{ width: 3000px; height: 3000px; opacity: 2;}
+    100%{ width: 500px; height: 500px; opacity: 0;}
+}

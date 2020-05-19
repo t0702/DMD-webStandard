@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+/* font-family: 'Archivo Black', sans-serif; */
+
+:root{ --main-font: 'Archivo Black', sans-serif;}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.container{max-width: 1100px; width:100%; margin: 0 auto;}
+
+.title a{font-size: 20px; font-family: var(--main-font); }
+.title a:hover,
+.title a:active,
+.title a:focus,
+.title a:link,
+.title a:visited{color: #000; text-decoration: none;}
+
+.nav-logo{width: 50px;}
+.wrap header{display: flex; justify-content: space-between; align-items: flex-end;}
+.wrap nav ul li{ list-style: none; padding: 0 20px; font-size: 14px;}
+.wrap nav ul{display:flex; }
+nav ul li a:hover,
+nav ul li a:active,
+nav ul li a:focus,
+nav ul li a:link,
+nav ul li a:visited{color: #000; text-decoration: none;}
+
+
+
+footer{background: #0f0f0f; color: #888888; font-size: 12px; padding: 20px 0;}
+footer hr{ opacity: .2; margin: 20px 0;}
+footer ul{display: flex; justify-content: flex-end;}
+footer ul li{list-style: none; padding-left: 30px;}
+footer>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot-logo img {width: 50px;}

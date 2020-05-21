@@ -1,43 +1,33 @@
-var modal = document.getElementById('myModal');
-var btn1 = document.getElementById("Btn1");
-var btn2 = document.getElementById("Btn2");
-var btn3 = document.getElementById("Btn3");                                        
-var video1 = document.getElementById("video-1");
-var video2 = document.getElementById("video-2");
-var video3 = document.getElementById("video-3");
-                                    
-var span = document.getElementsByClassName("close")[0];  
+var video = document.getElementById("video");
+var modal = document.getElementById("modal");
+var open = document.getElementsByClassName("open");
+var close = document.getElementsByClassName("close")[0];
+var modalCont = document.getElementsByClassName("modal-content")[0];
+var player = document.querySelectorAll(".player");
 
+open[0].onclick = function () {
+  modal.style.display = "block";
+  modalCont.appendChild(video);
+  player[1].classList.add("none");
+  player[2].classList.add("none");
+  player[0].classList.remove("none");
+};
+open[1].onclick = function () {
+  modal.style.display = "block";
+  modalCont.appendChild(video);
+  player[0].classList.add("none");
+  player[2].classList.add("none");
+  player[1].classList.remove("none");
+};
+open[2].onclick = function () {
+  modal.style.display = "block";
+  modalCont.appendChild(video);
+  player[0].classList.add("none");
+  player[1].classList.add("none");
+  player[2].classList.remove("none");
+};
 
-
-btn1.onclick = function() {
-    modal.style.display = "block";
-    video1.style.display = "block";
-    video2.style.display = "none";
-    video3.style.display = "none";
-}
-btn2.onclick = function(){
-    modal.style.display = "block";
-    video2.style.display = "block";
-    video1.style.display = "none";
-    video3.style.display = "none";
-}
-btn3.onclick = function(){
-    modal.style.display = "block";
-    video3.style.display = "block";
-    video1.style.display = "none";
-    video2.style.display = "none";
-}
-
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// close
-window.onclick = function(event) {
-    
-    if (event.target == modal) {
-        modal.style.display = "none";
-        video1.empty();
-    }
-}
+close.onclick = function () {
+  modal.style.display = "none";
+  modalCont.removeChild(video);
+};

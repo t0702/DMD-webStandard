@@ -114,9 +114,29 @@ body{
     justify-content: center;
     align-items: center;
     transition: .2s;
+    cursor:pointer;
+    position: relative;
+    /* overflow: hidden; */
 }
-.puz1 .shop-btn:hover{
-    background-color: #000;
+.puz1 .shop-btn:hover > div{
+    color: #000;
+    z-index: 3; font-weight: bold;
+}
+
+.puz1 .shop-btn:after{
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width:100%;
+    height: 0;
+    background: white;
+    transition: .2s;
+    z-index: 0;
+}
+.puz1 .shop-btn:hover:after{
+    position: absolute;
+    bottom: 0; left: 0;
+    height: 100%;
 }
 .puz2{
     height: 320px;

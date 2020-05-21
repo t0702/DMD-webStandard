@@ -29,6 +29,7 @@ nav ul li a:active,
 nav ul li a:focus,
 nav ul li a:link,
 nav ul li a:visited{color: #fff; text-decoration: none;}
+
 /* ------------------------ */
 
 body{ 
@@ -70,7 +71,7 @@ video {
 }
 .content h2{ font-weight: lighter; font-size: 40px; margin-bottom: 20px;}
 .content p{ font-size: 14px; font-weight: lighter; line-height: 1.9em;}
-.content p:last-child{font-weight: bold; font-size: 20px;}
+.content p:last-child{font-weight: bold; font-size: 30px;}
 
 .media-link {
     position: absolute; 
@@ -81,21 +82,17 @@ video {
     list-style: none;
     margin: 30px 0;
     text-align: right;
-
-    
 }
 .media-link ul li span{
-
     font-size: 60px; font-weight: bold; border-bottom: 3px solid #fff;
     color: #fff; transition: .3s;
     cursor: pointer;
 }
-.media-link ul li span:hover{color: #000;}
+.media-link ul li span:hover{color: #000; font-style: italic;}
 .media-link a:active,
 .media-link a:focus,
 .media-link a:link,
 .media-link a:visited{color: #fff; text-decoration: none; transition: .3s;}
-.media-link a:hover{ color: black;}
 .media-link a{font-size: 60px; font-weight: bold; border-bottom: 3px solid #fff;}
 
 
@@ -109,6 +106,9 @@ video {
     overflow: auto;
     background-color: rgba(0,0,0,0.5);
     display:none;
+}
+.none{
+    display: none;
 }
 
 /* Modal Content/Box */

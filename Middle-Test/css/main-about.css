@@ -20,8 +20,8 @@
 .bl-logo{
     position: absolute;
     width: 50px;
-    top:30px;
-    left: 30px;
+    top:50px;
+    left: 50px;
 }
 .m-content {
     position: absolute;
@@ -65,11 +65,11 @@
 .click:visited{color: #fff;}
 
 .official{
-    height: 30px; 
+    /* height: 30px;  */
     border-bottom: solid 1px #fff;
     text-decoration: none;
     position: absolute;
-    right: 30px;
+    right: 50px;
     bottom: 30px;
     color: #fff;
 }
@@ -188,6 +188,18 @@ body{
 .main-logo{
     width: 100px;
 }
+
+.sns{position: absolute; bottom: 30px; left: 50px;}
+.sns img{ height: 20px; }
+.sns ul{ display:flex; justify-content: center; align-items: center;}
+.sns ul li{list-style:none;  padding-right: 20px;}
+
+
+#Bold {color: white;}
+
+
+
+
 
 path { 
     stroke: #fff;

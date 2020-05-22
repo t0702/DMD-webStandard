@@ -43,7 +43,7 @@ hr {margin: 20px auto; opacity: .5;}
     width: 100vw; height: 100vh;
     object-fit: cover; 
     overflow: hidden;
-    z-index: -1; 
+    z-index: -6; 
 }
 video { 
     width: 100vw;
@@ -55,6 +55,8 @@ video {
 .blind{
     position: absolute;
     background: rgba(0, 0, 0, .5);
+    -webkit-background: rgba(0, 0, 0, .5);
+    -ms-background: rgba(0, 0, 0, .5);
     top: 0; left: 0;
     width: 40%;
     height: 100vh;
@@ -68,6 +70,7 @@ video {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+    z-index: 1;
 }
 .content h2{ font-weight: lighter; font-size: 40px; margin-bottom: 20px;}
 .content p{ font-size: 14px; font-weight: lighter; line-height: 1.9em;}
@@ -88,7 +91,7 @@ video {
     color: #fff; transition: .3s;
     cursor: pointer;
 }
-.media-link ul li span:hover{color: #000; font-style: italic;}
+.media-link ul li span:hover{color: #000;}
 .media-link a:active,
 .media-link a:focus,
 .media-link a:link,
